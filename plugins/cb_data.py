@@ -30,12 +30,10 @@ async def doc(bot,update):
      new_filename = name[1]
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
-     file_type = file.document or file.video or file.audio
-     fileid = file_type.file_id
      ms = await update.message.edit("``` Trying To Download...```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = fileid, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
@@ -84,12 +82,10 @@ async def vid(bot,update):
      new_filename = name[1]
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
-     file_type = file.document or file.video or file.audio
-     fileid = file_type.file_id
      ms = await update.message.edit("``` Trying To Download...```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = fileid , progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
@@ -142,12 +138,10 @@ async def aud(bot,update):
      new_filename = name[1]
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
-     file_type = file.document or file.video or file.audio
-     fileid = file_type.file_id
      ms = await update.message.edit("``` Trying To Download...```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = fileid , progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file , progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
