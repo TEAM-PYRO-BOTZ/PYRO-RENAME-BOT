@@ -5,7 +5,7 @@ from helper.database import find, delthumb, addthumb
 async def viewthumb(client,message):
 		thumb = find(int(message.chat.id))
 		if thumb :
-			await app.send_photo(message.chat.id,photo =f"{photo}")
+			await client.send_photo(message.chat.id,photo =f"{photo}")
 		else:
 			await message.reply_text("**You dont have any custom Thumbnail**")
 	
