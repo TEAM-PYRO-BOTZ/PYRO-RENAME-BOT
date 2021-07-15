@@ -3,7 +3,7 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 import humanize
 from helper.database import  insert 
 
-@Client.on_messsage(filter.private & filters.command(["start"]))
+@Client.on_message(filter.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_text(text =f"""
