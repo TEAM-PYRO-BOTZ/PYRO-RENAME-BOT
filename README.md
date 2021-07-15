@@ -10,18 +10,7 @@ Telegram File Renamer Bot
 </p>
 </p>
 
-</p>
-<p align="center">
-  <a href="https://github.com/lntechnical2/RENAMER_BOT/stargazers">
-    <img src="https://img.shields.io/github/stars/lntechnical2/RENAMER_BOT?style=social">
 
-  </a>
-  
-  <a href="https://github.com/lntechnical2/RENAMER_BOT/fork">
-    <img src="https://img.shields.io/github/forks/lntechnical2/RENAMER_BOT?label=Fork&style=social">
-
-  </a>  
-</p>
 
 
 ## Configs 
