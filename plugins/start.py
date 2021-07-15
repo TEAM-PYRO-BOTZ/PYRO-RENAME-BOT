@@ -25,9 +25,7 @@ async def send_doc(client,message):
        filesize = humanize.naturalsize(file.file_size)
        fileid = file.file_id
        await message.reply_text(
-       f"""__What do you want me to do with this file?__
-       **File Name** :- {filename}
-       **File Size** :- {filesize}"""
+       f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
        ,reply_to_message_id = message.message_id,
        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
        ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
