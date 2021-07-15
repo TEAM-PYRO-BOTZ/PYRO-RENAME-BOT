@@ -14,4 +14,19 @@ async def start(client,message):
 	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
 	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
 
-	
+
+
+@Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
+async def send_doc(client,message):
+       media = await app.get_messages(message.chat.id,message.message_id)
+       file = media.document or media.video or media.audio 
+       filename = file.file_name
+       filesize = humanize.naturalsize(file.file_size)
+       fileid = file.file_id
+       await message.reply_text(
+       f"""__What do you want me to do with this file?__
+       **File Name** :- {filename}
+       **File Size** :- {filesize}"""
+       ,reply_to_message_id = message.message_id,
+       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
+       ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
