@@ -4,6 +4,7 @@ from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceRe
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from helper.database import find
+import os
 
 @Client.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
