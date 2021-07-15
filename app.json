@@ -1,1 +1,38 @@
-
+{
+    "name": "Renamer Bot",
+    "description": "Telegram File Renamer Bot ",
+    "keywords": [
+        "Renamer Bot",
+        "Mongo DB"
+    ],
+    "repository": "https://github.com/lntechnical2/RENAMER_BOT",
+    "success_url": "https://telegram.dog/lntechnical",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": ""
+        },
+        "DB_NAME":{ 
+               "description":"Your Mongo DB Database Name ",
+                "value": "my",
+                "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
