@@ -45,7 +45,7 @@ async def doc(bot,update):
      user_id = int(update.message.chat.id)
      thumb = find(user_id)
      if thumb:
-     		ph_path = await bot.download_media(photo)
+     		ph_path = await bot.download_media(thumb)
      		Image.open(ph_path).convert("RGB").save(ph_path)
      		img = Image.open(ph_path)
      		img.resize((320, 320))
@@ -101,7 +101,7 @@ async def vid(bot,update):
      user_id = int(update.message.chat.id)
      thumb = find(user_id)
      if thumb:
-     		ph_path = await bot.download_media(photo)
+     		ph_path = await bot.download_media(thumb)
      		Image.open(ph_path).convert("RGB").save(ph_path)
      		img = Image.open(ph_path)
      		img.resize((320, 320))
@@ -156,7 +156,7 @@ async def aud(bot,update):
      user_id = int(update.message.chat.id)
      thumb = find(user_id)
      if thumb:
-     		ph_path = await bot.download_media(photo)
+     		ph_path = await bot.download_media(thumb)
      		Image.open(ph_path).convert("RGB").save(ph_path)
      		img = Image.open(ph_path)
      		img.resize((320, 320))
