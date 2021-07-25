@@ -21,6 +21,8 @@ Telegram File Renamer Bot
 
 * API_HASH      - From my.telegram.org 
 
+* ADMIN         - Your User ID 
+
 * DATABASE_URI  - Mongo Database URL from https://cloud.mongodb.com/
 
 * DATABASE_NAME  - Your database name from mongoDB. Default will be 'my'
