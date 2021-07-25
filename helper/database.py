@@ -28,3 +28,9 @@ def find(chat_id):
              lgcd = i["file_id"]
              return lgcd 
 
+def getid():
+    values = []
+    for key  in dbcol.find():
+         id = key["_id"]
+         values.append((id)) 
+    return values
