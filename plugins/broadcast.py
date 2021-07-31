@@ -1,3 +1,4 @@
+import os
 from pyrogram import Client ,filters
 from helper.database import getid
 ADMIN = int(os.environ.get("ADMIN", 923943045))
