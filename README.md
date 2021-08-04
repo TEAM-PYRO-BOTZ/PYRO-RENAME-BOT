@@ -32,6 +32,8 @@ Telegram File Renamer Bot
 * `/viewthumb` View Thumbnail 
 > Delete Thumbnail
 * `/delthumb` Delete Thumbnail
+> Broadcast Send Message To All User 
+* `/broadcast reply to message
 
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lntechnical2/RENAMER_BOT)
