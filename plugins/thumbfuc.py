@@ -19,5 +19,5 @@ async def removethumb(client,message):
 async def addthumbs(client,message):
 	file_id = str(message.photo.file_id)
 	addthumb(message.chat.id , file_id)
-	await message.reply_text("Custom thumbnail saved    ✅")
+	await message.reply_text("**Your Custom Thumbnail Saved Successfully** ✅")
 	
