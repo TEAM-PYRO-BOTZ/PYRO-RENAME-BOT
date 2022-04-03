@@ -8,7 +8,7 @@ force_channel = "mkn_bots_updates"
 async def refunc(client,message):
     if force_channel:   
         try:             
-            user = await _.get_chat_member(force_channel, message.from_user.id)
+            user = await client.get_chat_member(force_channel, message.from_user.id)
             if user.status == "kicked":
                await message.reply_text("Sorry, You're Banned")
                return
@@ -20,8 +20,7 @@ async def refunc(client,message):
               ])
             )
             return
-        else:
-
+        #TRChatBase(client.from_user.id, client.text, "reply")
         if (message.reply_to_message.reply_markup) and isinstance(message.reply_to_message.reply_markup, ForceReply):
         	new_name = message.text
         	await message.delete()
