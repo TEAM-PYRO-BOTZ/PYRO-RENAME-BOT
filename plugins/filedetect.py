@@ -1,8 +1,27 @@
 from pyrogram import Client, filters
 from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
+from pyrogram.errors import UserNotParticipant
+
+force_channel = "mkn_bots_updates"
 
 @Client.on_message(filters.private & filters.reply)
 async def refunc(client,message):
+    if force_channel:   
+        try:             
+            user = await _.get_chat_member(force_channel, message.from_user.id)
+            if user.status == "kicked":
+               await message.reply_text("Sorry, You're Banned")
+               return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="**sorry bro നിങ്ങൾ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്തിട്ടില്ല താഴെയുള്ള ബട്ടനിൽ ക്ലിക്ക് ചെയ്ത് join ചെയ്യൂ എന്നിട്ട് വീണ്ടും start കൊടുക്കൂ 🙏**",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text="📢𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕📢", url=f"https://t.me/{force_channel}")]
+              ])
+            )
+            return
+        else:
+
         if (message.reply_to_message.reply_markup) and isinstance(message.reply_to_message.reply_markup, ForceReply):
         	new_name = message.text
         	await message.delete()
