@@ -1,6 +1,7 @@
 {
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
+    "stack": "container",
     "keywords": [
         "Renamer Bot",
         "Mongo DB"
