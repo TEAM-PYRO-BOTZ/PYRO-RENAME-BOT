@@ -4,14 +4,14 @@ from pyrogram.errors import UserNotParticipant
 import humanize
 form translation import translation
 from helper.database import  insert 
-from bot import BOT_LINK, force_channel
+from bot import BOT_LINK, FORCE_SUB
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
-    if force_channel:   
+    if FORCE_SUB:   
         try:             
-            user = await client.get_chat_member(force_channel, message.from_user.id)
+            user = await client.get_chat_member(FORCE_SUB, message.from_user.id)
             if user.status == "kicked":
                await message.reply_text("Sorry, You're Banned")
                return
