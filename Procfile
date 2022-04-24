@@ -1,1 +1,1 @@
-worker: Dockerfile
+worker: python3 bot.py
