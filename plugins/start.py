@@ -4,7 +4,7 @@ from pyrogram.errors import UserNotParticipant
 import humanize
 form translation import translation
 from helper.database import  insert 
-from bot import BOT_LINK, FORCE_SUB
+from bot import BOT_UN, FORCE_SUB
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
@@ -59,7 +59,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text=translation.ABOUT_TXT.format(BOT_LINK),
+            text=translation.ABOUT_TXT.format(BOT_UN),
             disable_web_page_preview = Truer,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
