@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import UserNotParticipant
 import humanize
-form translation import mr
+form Translation import mr
 from helper.database import  insert 
 from bot import BOT_UN, FORCE_SUB
 
