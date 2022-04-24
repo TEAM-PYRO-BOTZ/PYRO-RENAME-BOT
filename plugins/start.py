@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import UserNotParticipant
 import humanize
-form translation import translation
+form translation import mr
 from helper.database import  insert 
 from bot import BOT_UN, FORCE_SUB
 
@@ -59,7 +59,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text=translation.ABOUT_TXT.format(BOT_UN),
+            text=mr.ABOUT_TXT.format(BOT_UN),
             disable_web_page_preview = Truer,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
