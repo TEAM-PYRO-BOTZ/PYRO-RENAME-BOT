@@ -1,7 +1,8 @@
 from pyrogram import Client, filters
-from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import UserNotParticipant
 import humanize
+form translation import translation
 from helper.database import  insert 
 
 force_channel = "mkn_bots_updates"
@@ -29,8 +30,11 @@ async def start(client,message):
                 reply_markup=InlineKeyboardMarkup( [[
                     InlineKeyboardButton("👨‍💻 OWNER 👨‍💻", url='https://t.me/mr_MKN')
                     ],[
-                    InlineKeyboardButton('📢up channel📢', url='https://t.me/mkn_bots_updates'),
-                    InlineKeyboardButton('ℹ️help groupℹ️', url='https://t.me/MKN_BOTZ_DISCUSSION_GROUP')
+                    InlineKeyboardButton('📢 UPDATES', url='https://t.me/mkn_bots_updates'),
+                    InlineKeyboardButton('ℹ️ SUPPORT', url='https://t.me/MKN_BOTZ_DISCUSSION_GROUP')
+                    ],[
+                    InlineKeyboardButton('🛡️ About', callback_data='about'),
+                    InlineKeyboardButton('ℹ️ Help', url='https://t.me/mrmoviesseries_print')
                     ]]
                     )
                 )
@@ -48,3 +52,28 @@ async def send_doc(client,message):
        ,reply_to_message_id = message.message_id,
        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
        ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
+
+
+@Client.on_callback_query()
+async def cb_handler(client, query: CallbackQuery):
+    data = query.data
+    if data == "about":
+        await query.message.edit_text(
+            text=translation.ABOUT_TXT,
+            disable_web_page_preview = Truer,
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
+               ]]
+            )
+        )
+        elif data == "close":
+        await query.message.delete()
+        try:
+            await query.message.reply_to_message.delete()
+        except:
+            pass
+
+
+
+
+
