@@ -1,1 +1,1 @@
-worker: python3 Dockerfile 
+worker: Dockerfile
