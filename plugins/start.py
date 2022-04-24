@@ -60,7 +60,7 @@ async def cb_handler(client, query: CallbackQuery):
     if data == "about":
         await query.message.edit_text(
             text=mr.ABOUT_TXT.format(BOT_UN),
-            disable_web_page_preview = Truer,
+            disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
                ]]
