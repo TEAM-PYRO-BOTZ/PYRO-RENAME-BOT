@@ -1,5 +1,8 @@
+from bot import BOT_UN
+
+
 class translation(object):
-    ABOUT_TXT = """🤖 𝘔𝘠 𝘕𝘈𝘔𝘌: {}
+    ABOUT_TXT = """🤖 𝘔𝘠 𝘕𝘈𝘔𝘌: BOT_UN
 👑 𝘖𝘞𝘕𝘌𝘙: <a href=https://t.me/mr_MKN>𝘔𝘳.𝘔𝘒𝘕 𝘛𝘎</a>
 👨‍💻 𝘋𝘌𝘝𝘌𝘓𝘖𝘗𝘌𝘙: <a href=https://github.com/lntechnical2>𝘐𝘕𝘛𝘌𝘊𝘏𝘕𝘐𝘊𝘈𝘓</a> 
 📕 𝘓𝘐𝘉𝘙𝘈𝘙𝘠: 𝘗𝘠𝘙𝘖𝘎𝘙𝘈𝘔
