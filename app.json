@@ -10,34 +10,35 @@
     "env": {
         "APP_ID": {
             "description": "Your APP ID From my.telegram.org ",
-            "value": ""
+            "value": "12075871"
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": ""
+            "value": "e3c805f87c13a7a800dc1ceee2fbab8a"
         },
         "BOT_UN": {
             "description": "Your bot user name without [@] ",
-            "value": ""
+            "value": "TG_FileRenamer_Ultron_bot"
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
-            "value": ""
+            "value": "mkn_bots_updates"
         },
         "TOKEN": {
             "description": "Your Bot Token From @BotFather",
-            "value": ""
+            "value": "5232398510:AAEyU5n0iT7nIGrv3mUryvBcRC2xDeZd96Y"
         },
         "ADMIN": {
             "description":"Add Your User ID"
+            "value": "5240961762"
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
-            "value": ""
+            "value": "mongodb+srv://FL:FL@cluster0.vnyds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         },
         "DB_NAME":{ 
                "description":"Your Mongo DB Database Name ",
-                "value": "my",
+                "value": "Rebot",
                 "required": false
         }
     },
