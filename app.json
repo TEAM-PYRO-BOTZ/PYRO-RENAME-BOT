@@ -16,6 +16,14 @@
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
         },
+        "BOT_UN": {
+            "description": "Your bot user name without [@] ",
+            "value": ""
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": ""
+        },
         "TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": ""
