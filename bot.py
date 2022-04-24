@@ -7,7 +7,7 @@ APP_ID = int(os.environ.get("APP_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
-BOT_LINK = os.environ.get("BOT_LINK", "")
+BOT_UN = os.environ.get("BOT_UN", "")
 
 FORCE_SUB = os.environ.get("FORCE_SUB", "")           
 
