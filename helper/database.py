@@ -15,14 +15,14 @@ def insert(chat_id):
             except:
             	pass
 
-def addthumb(chat.id, file_id):
- dbcol.update_one({"_id":chat.id},{"$set":{"file_id":file_id}})
+def addthumb(chat_id, file_id):
+	dbcol.update_one({"_id":chat_id},{"$set":{"file_id":file_id}})
 	
-def delthumb(chat.id):
-	dbcol.update_one({"_id":chat.id},{"$set":{"file_id":None}})
+def delthumb(chat_id):
+	dbcol.update_one({"_id":chat_id},{"$set":{"file_id":None}})
 	
 def find(chat_id):
-	id =  {"_id":chat.id}
+	id =  {"_id":chat_id}
 	x = dbcol.find(id)
 	for i in x:
              lgcd = i["file_id"]
