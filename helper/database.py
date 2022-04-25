@@ -16,7 +16,7 @@ def insert(chat_id):
             	pass
 
 def addthumb(chat_id, file_id):
- dbcol.insert_one({"_id":chat_id},{"$set":{"file_id":file_id}})
+ dbcol.update_one({"_id":chat_id},{"$set":{"file_id":file_id}})
 	
 def delthumb(chat_id):
 	dbcol.update_one({"_id":chat_id},{"$set":{"file_id":None}})
