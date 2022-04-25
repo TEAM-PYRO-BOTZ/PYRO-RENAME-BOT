@@ -9,7 +9,7 @@ class mr(object):
 ├💾 𝘋𝘈𝘛𝘈 𝘉𝘈𝘚𝘌 : <a href=https://cloud.mongodb.com>𝘔𝘖𝘕𝘎𝘖 𝘋𝘉</a>
 ├🖥️ 𝘔𝘠 𝘚𝘌𝘙𝘝𝘌𝘙 : <a href=https://dashboard.heroku.com>𝘏𝘌𝘙𝘖𝘒𝘜</a>
 ├📊 𝘉𝘜𝘐𝘓𝘋 𝘚𝘛𝘈𝘛𝘜𝘚 : v1.0.1 [ 𝘏𝘌𝘟𝘈 ]
-├⚡️ 𝘊𝘙𝘌𝘈𝘋𝘐𝘛𝘚 : <a href=https://youtube.com/c/MoTech_YT>𝘔𝘖 𝘛𝘌𝘊𝘏</a>              
+├⚡️ 𝘊𝘙𝘌𝘈𝘋𝘐𝘛𝘚 : <a href=https://youtu.be/7ALYUk-rYMc>𝘔𝘖 𝘛𝘌𝘊𝘏</a>              
 ╰─────────────────────────⍟
                                  """
 
