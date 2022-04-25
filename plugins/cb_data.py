@@ -20,7 +20,7 @@ async def rename(bot,update):
 	date = update.message.date
 	await update.message.delete()
 	await update.message.reply_text("__Please enter the new filename...__",	
-	reply_to_message_id=update.message.reply_to_message.message_id,  
+	reply_to_message_id=update.message.reply_to_message.id,  
 	reply_markup=ForceReply(True))
 	
 @Client.on_callback_query(filters.regex("doc"))
