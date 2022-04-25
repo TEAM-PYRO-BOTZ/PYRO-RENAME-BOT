@@ -23,7 +23,7 @@ async def start(client,message):
               ])
             )
             return
-
+        else:
             insert(int(message.chat.id))
             await message.reply_photo(
                 photo="https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
@@ -57,7 +57,7 @@ async def send_doc(client,message):
               ])
             )
             return
-
+        else:
             media = await client.get_messages(message.chat.id,message.id)
             file = media.document or media.video or media.audio 
             filename = file.file_name
