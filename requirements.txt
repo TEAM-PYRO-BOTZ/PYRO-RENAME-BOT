@@ -1,3 +1,5 @@
+aiofiles
+motor
 Pillow
 humanize
 hachoir
