@@ -9,7 +9,7 @@ from bot import BOT_UN, FORCE_SUB
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
-    if FORCE_SUB:   
+        if FORCE_SUB:   
         try:             
             user = await client.get_chat_member(FORCE_SUB, message.from_user.id)
             if user.status == "kicked":
@@ -23,7 +23,7 @@ async def start(client,message):
               ])
             )
             return
-        else:
+
             insert(int(message.chat.id))
             await message.reply_photo(
                 photo="https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
@@ -43,6 +43,21 @@ async def start(client,message):
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
 async def send_doc(client,message):
+        if FORCE_SUB:   
+        try:             
+            user = await client.get_chat_member(FORCE_SUB, message.from_user.id)
+            if user.status == "kicked":
+               await message.reply_text("Sorry, You're Banned")
+               return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="**sorry bro നിങ്ങൾ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്തിട്ടില്ല താഴെയുള്ള ബട്ടനിൽ ക്ലിക്ക് ചെയ്ത് join ചെയ്യൂ എന്നിട്ട് വീണ്ടും start കൊടുക്കൂ 🙏**",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text="📢𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕📢", url=f"https://t.me/{FORCE_SUB}")]
+              ])
+            )
+            return
+
        media = await client.get_messages(message.chat.id,message.id)
        file = media.document or media.video or media.audio 
        filename = file.file_name
