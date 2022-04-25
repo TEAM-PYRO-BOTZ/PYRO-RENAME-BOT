@@ -9,7 +9,7 @@ from bot import BOT_UN, FORCE_SUB
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
-        if FORCE_SUB:   
+    if FORCE_SUB:   
         try:             
             user = await client.get_chat_member(FORCE_SUB, message.from_user.id)
             if user.status == "kicked":
@@ -43,7 +43,7 @@ async def start(client,message):
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
 async def send_doc(client,message):
-        if FORCE_SUB:   
+    if FORCE_SUB:   
         try:             
             user = await client.get_chat_member(FORCE_SUB, message.from_user.id)
             if user.status == "kicked":
