@@ -1,6 +1,7 @@
 import math
-import time
-
+import time 
+from Translation import mr
+from pyrogram.errors import UserNotParticipant
 
 async def progress_for_pyrogram(
     current,
@@ -23,12 +24,12 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-        progress = "[{0}{1}] \n**📊Progress**: {2}%\n".format(
+        progress = "{0}{1}".format(
             ''.join(["⦿" for i in range(math.floor(percentage / 5))]),
-            ''.join(["⭗" for i in range(20 - math.floor(percentage / 5))]),
-            round(percentage, 2))
-
-        tmp = progress + "{0} of {1}\n**⚡️Speed**: {2}/s\n**⏳️ETA**: {3}\n".format(
+            ''.join(["⭗" for i in range(20 - math.floor(percentage / 5))]))
+            
+        tmp = progress + mr.PROGRESS_BAR.format( 
+            round(percentage, 2),
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
@@ -37,7 +38,7 @@ async def progress_for_pyrogram(
         )
         try:
             await message.edit(
-                text="{}\n {}".format(
+                text="{}\n\n{}".format(
                     ud_type,
                     tmp
                 )
@@ -53,7 +54,7 @@ def humanbytes(size):
         return ""
     power = 2**10
     n = 0
-    Dic_powerN = {0: ' ', 1: 'Ki', 2: 'Mi', 3: 'Gi', 4: 'Ti'}
+    Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
         n += 1
@@ -70,4 +71,24 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s, ") if seconds else "") + \
         ((str(milliseconds) + "ms, ") if milliseconds else "")
-    return tmp[:-2]
+    return tmp[:-2] 
+
+def convert(seconds):
+    seconds = seconds % (24 * 3600)
+    hour = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60      
+    return "%d:%02d:%02d" % (hour, minutes, seconds)
+
+async def not_subscribed(_, client, message):
+   if not client.force_channel:
+      return False
+   try:             
+      user = await client.get_chat_member(client.force_channel, message.from_user.id)
+   except UserNotParticipant:
+      pass
+   else:
+      if user.status != "kicked":
+         return False 
+   return True

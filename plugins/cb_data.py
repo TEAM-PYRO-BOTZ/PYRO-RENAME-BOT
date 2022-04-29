@@ -1,19 +1,20 @@
-from helper.progress import progress_for_pyrogram
+from helper.utils import progress_for_pyrogram, convert
 from pyrogram import Client, filters
 from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from helper.database import find
-import os
+import os 
+import humanize
 from PIL import Image
 import time
 
 @Client.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
 	try:
-		await update.message.delete()
+           await update.message.delete()
 	except:
-		return
+           return
 @Client.on_callback_query(filters.regex('rename'))
 async def rename(bot,update):
 	user_id = update.message.chat.id
@@ -23,8 +24,9 @@ async def rename(bot,update):
 	reply_to_message_id=update.message.reply_to_message.id,  
 	reply_markup=ForceReply(True))
 	
-@Client.on_callback_query(filters.regex("doc"))
+@Client.on_callback_query(filters.regex("upload"))
 async def doc(bot,update):
+     type = update.data.split('_')[1]
      new_name = update.message.text
      name = new_name.split(":-")
      new_filename = name[1]
@@ -36,149 +38,72 @@ async def doc(bot,update):
      	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
-     	return
-     	
-     splitpath = path.split("/downloads/")
-     dow_file_name = splitpath[1]
-     old_file_name =f"downloads/{dow_file_name}"
-     os.rename(old_file_name,file_path)
-     user_id = int(update.message.chat.id)
-     thumb = find(user_id)
-     if thumb:
-     		ph_path = await bot.download_media(thumb)
-     		Image.open(ph_path).convert("RGB").save(ph_path)
-     		img = Image.open(ph_path)
-     		img.resize((320, 320))
-     		img.save(ph_path, "JPEG")
-     		c_time = time.time()
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_document(update.message.chat.id,document = file_path,thumb=ph_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     			os.remove(ph_path)
-     		except Exception as e:
-     			await ms.edit(e)
-     			os.remove(file_path)
-     			os.remove(ph_path)
-     			     		     		
-     else:
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_document(update.message.chat.id,document = file_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     		except Exception as e:
-     			await ms.edit(e)
-     			os.remove(file_path)
-     			     		   		
-     		
-@Client.on_callback_query(filters.regex("vid"))
-async def vid(bot,update):
-     new_name = update.message.text
-     name = new_name.split(":-")
-     new_filename = name[1]
-     file_path = f"downloads/{new_filename}"
-     file = update.message.reply_to_message
-     ms = await update.message.edit("``` Trying To Download...```")
-     c_time = time.time()
-     try:
-     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
-     except Exception as e:
-     	await ms.edit(e)
-     	return
-     
+     	return 
      splitpath = path.split("/downloads/")
      dow_file_name = splitpath[1]
      old_file_name =f"downloads/{dow_file_name}"
      os.rename(old_file_name,file_path)
      duration = 0
-     metadata = extractMetadata(createParser(file_path))
-     if metadata.has("duration"):
-     		duration = metadata.get('duration').seconds
-     user_id = int(update.message.chat.id)
-     thumb = find(user_id)
-     if thumb:
-     		ph_path = await bot.download_media(thumb)
-     		Image.open(ph_path).convert("RGB").save(ph_path)
-     		img = Image.open(ph_path)
-     		img.resize((320, 320))
-     		img.save(ph_path, "JPEG")
-     		c_time = time.time()
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     			os.remove(ph_path)   				
-     		except Exception as e:
-     				await ms.edit(e)
-     				os.remove(file_path)
-     				os.remove(ph_path)
-     				
-     else:
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     		except Exception as e:
-     			await ms.edit(e)
-     			os.remove(file_path)
-   
-     			     		     		
-@Client.on_callback_query(filters.regex("aud"))
-async def aud(bot,update):
-     new_name = update.message.text
-     name = new_name.split(":-")
-     new_filename = name[1]
-     file_path = f"downloads/{new_filename}"
-     file = update.message.reply_to_message
-     ms = await update.message.edit("``` Trying To Download...```")
-     c_time = time.time()
      try:
-     	path = await bot.download_media(message = file , progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
-     except Exception as e:
-     	await ms.edit(e)
-     	return
-     splitpath = path.split("/downloads/")
-     dow_file_name = splitpath[1]
-     old_file_name =f"downloads/{dow_file_name}"
-     os.rename(old_file_name,file_path)
-     duration = 0
-     metadata = extractMetadata(createParser(file_path))
-     if metadata.has("duration"):
-     	duration = metadata.get('duration').seconds
-     user_id = int(update.message.chat.id)
-     thumb = find(user_id)
-     if thumb:
-     		ph_path = await bot.download_media(thumb)
-     		Image.open(ph_path).convert("RGB").save(ph_path)
-     		img = Image.open(ph_path)
-     		img.resize((320, 320))
-     		img.save(ph_path, "JPEG")
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     			os.remove(ph_path)
-     		except Exception as e:
-     			await ms.edit(e)
-     			os.remove(file_path)
-     			os.remove(ph_path)
+        metadata = extractMetadata(createParser(file_path))
+        if metadata.has("duration"):
+           duration = metadata.get('duration').seconds
+     except:
+        pass
+     user_id = int(update.message.chat.id) 
+     ph_path = None
+     data = find(user_id) 
+     media = getattr(file, file.media.value)
+     c_caption = data[1] 
+     c_thumb = data[0]
+     if c_caption:
+         caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
      else:
-     		await ms.edit("```Trying To Uploading```")
-     		c_time = time.time()
-     		try:
-     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
-     			await ms.delete()
-     			os.remove(file_path)
-     		except Exception as e:
-     			await ms.edit(e)
-     			os.remove(file_path)		
+         caption = f"**{new_filename}**"
+     if (media.thumbs or c_thumb):
+         if c_thumb:
+            ph_path = await bot.download_media(c_thumb) 
+         else:
+            ph_path = await bot.download_media(media.thumbs[0].file_id)
+         Image.open(ph_path).convert("RGB").save(ph_path)
+         img = Image.open(ph_path)
+         img.resize((320, 320))
+         img.save(ph_path, "JPEG")
+     await ms.edit("```Trying To Uploading```")
+     c_time = time.time() 
+     try:
+        if type == "document":
+           await bot.send_document(
+		    update.message.chat.id,
+                    document=file_path,
+                    thumb=ph_path, 
+                    caption=caption, 
+                    progress=progress_for_pyrogram,
+                    progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+        elif type == "video": 
+            await bot.send_video(
+		    update.message.chat.id,
+		    video=file_path,
+		    caption=caption,
+		    thumb=ph_path,
+		    duration=duration,
+		    progress=progress_for_pyrogram,
+		    progress_args=( "```Trying To Uploading```",  ms, c_time))
+        elif type == "audio": 
+            await bot.send_audio(
+		    update.message.chat.id,
+		    audio=file_path,
+		    caption=caption,
+		    thumb=ph_path,
+		    duration=duration,
+		    progress=progress_for_pyrogram,
+		    progress_args=( "```Trying To Uploading```",  ms, c_time   )) 
+     except Exception as e: 
+         await ms.edit(e) 
+         os.remove(file_path)
+         if ph_path:
+           os.remove(ph_path)
+     await ms.delete() 
+     os.remove(file_path) 
+     if ph_path:
+        os.remove(ph_path) 

@@ -1,25 +1,51 @@
-from pyrogram import Client
-import os
+import os 
+import logging 
+import logging.config
+from pyrogram import Client 
 
-TOKEN = os.environ.get("TOKEN", "")
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR) 
 
-APP_ID = int(os.environ.get("APP_ID", ""))
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+
+API_ID = int(os.environ.get("API_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
-BOT_UN = os.environ.get("BOT_UN", "")
+FORCE_SUB = os.environ.get("FORCE_SUB", None)           
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "")           
+class Bot(Client):
 
-if __name__ == "__main__" :
-    plugins = dict(
-        root="plugins"
-    )
-    app = Client(
-        "renamer",
-        bot_token=TOKEN,
-        api_id=APP_ID,
-        api_hash=API_HASH,
-        plugins=plugins
-    )
-    app.run()
+    def __init__(self):
+        super().__init__(
+            name="renamer",
+            api_id=API_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
+            workers=50,
+            plugins={"root": "plugins"},
+            sleep_threshold=5,
+        )
+
+    async def start(self):
+       await super().start()
+       me = await self.get_me()
+       self.username = me.username 
+       self.force_channel = FORCE_SUB
+       if FORCE_SUB:
+         try:
+            link = await self.export_chat_invite_link(FORCE_SUB)
+            self.invitelink = link
+         except Exception as e:
+            logging.warning(e) 
+            logging.warning("Make Sure Bot admin in force sub channel") 
+            self.force_channel = None
+       logging.info(f"{me.first_name} Started")
+        
+    async def stop(self, *args):
+      await super().stop()
+      logging.info("Bot Stopped")
+        
+bot = Bot()
+bot.run()

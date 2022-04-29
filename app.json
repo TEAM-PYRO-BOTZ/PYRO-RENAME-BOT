@@ -17,15 +17,11 @@
             "description": "Your API Hash From my.telegram.org ",
             "value": "e3c805f87c13a7a800dc1ceee2fbab8a"
         },
-        "BOT_UN": {
-            "description": "Your bot user name without [@] ",
-            "value": "TG_FileRenamer_Ultron_bot"
-        },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
             "value": "mkn_bots_updates"
         },
-        "TOKEN": {
+        "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": "5232398510:AAEyU5n0iT7nIGrv3mUryvBcRC2xDeZd96Y"
         },
