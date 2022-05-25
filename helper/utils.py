@@ -92,9 +92,7 @@ async def not_subscribed(_, client, message):
       if user.status != "kicked":         
          return False 
    return True
-         await message.reply_text("Sorry, You're Banned")
-               
-
+         
 
 
 
