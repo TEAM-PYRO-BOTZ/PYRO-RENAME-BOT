@@ -1,7 +1,6 @@
 class mr(object):
     PROGRESS_BAR = """\n
 ╭───[**🔅Progress Bar🔅**]───⍟
-│
 ├<b>📁 : {1} | {2}</b>
 ├<b>🚀 : {0}%</b>
 ├<b>⚡ : {3}/s</b>
@@ -20,7 +19,7 @@ class mr(object):
 ├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
 ├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>𝙷𝙴𝚁𝙾𝙺𝚄</a>
 ├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v3.6.8 [ 𝙼𝙰𝙹𝙾𝚁 ]              
-╰─────────────────────────⍟
+╰───────────────⍟
                                 """
     HELP_TXT = """
 🌌 <b><u>HOW TO SET THUMBNILE</u></b>
