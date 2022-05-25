@@ -10,16 +10,16 @@ class mr(object):
 
     ABOUT_TXT = """
 ╭───────────⍟
-├🤖 𝘔𝘠 𝘕𝘈𝘔𝘌 : {}
-├👑 𝘖𝘞𝘕𝘌𝘙 : <a href=https://t.me/mr_MKN>𝘔𝘳.𝘔𝘒𝘕 𝘛𝘎</a>
-├😎 𝘋𝘌𝘝𝘚 : @Mhd_rzn & @mr_MKN 
-├👨‍💻 𝘋𝘌𝘝𝘌𝘓𝘖𝘗𝘌𝘙 : <a href=https://github.com/lntechnical2>𝘐𝘕𝘛𝘌𝘊𝘏𝘕𝘐𝘊𝘈𝘓</a>
-├🖥️ 𝘛𝘜𝘛𝘖𝘙𝘐𝘈𝘓 : <a href=https://youtu.be/7ALYUk-rYMc>𝘔𝘖 𝘛𝘌𝘊𝘏 𝘠𝘛</a>
-├📕 𝘓𝘐𝘉𝘙𝘈𝘙𝘠 : <a href=https://github.com/pyrogram>𝘗𝘠𝘙𝘖𝘎𝘙𝘈𝘔</a>
-├✏️ 𝘓𝘈𝘕𝘎𝘜𝘈𝘎𝘌 : <a href=https://www.python.org>𝘗𝘠𝘛𝘏𝘖𝘕 3</a>
-├💾 𝘋𝘈𝘛𝘈 𝘉𝘈𝘚𝘌 : <a href=https://cloud.mongodb.com>𝘔𝘖𝘕𝘎𝘖 𝘋𝘉</a>
-├🌀 𝘔𝘠 𝘚𝘌𝘙𝘝𝘌𝘙 : <a href=https://dashboard.heroku.com>𝘏𝘌𝘙𝘖𝘒𝘜</a>
-├📊 𝘉𝘜𝘐𝘓𝘋 𝘚𝘛𝘈𝘛𝘜𝘚 : v3.9.9 [ 𝘏𝘌𝘟𝘈 ]              
+├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
+├👑 𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
+├😎 𝙳𝙴𝚅𝚂 : @Mhd_rzn & @mr_MKN 
+├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/lntechnical2>𝙻𝙽 𝚃𝙴𝙲𝙷.𝚐𝚒𝚝</a>
+├🖥️ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 : <a href=https://youtu.be/7ALYUk-rYMc>𝙼𝙾 𝚃𝙴𝙲𝙷 𝚈𝚃</a>
+├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
+├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>𝙿𝚈𝚃𝙷𝙾𝙽 3</a>
+├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
+├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>𝙷𝙴𝚁𝙾𝙺𝚄</a>
+├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v3.6.8 [ 𝙼𝙰𝙹𝙾𝚁 ]              
 ╰─────────────────────────⍟
                                 """
     HELP_TXT = """
