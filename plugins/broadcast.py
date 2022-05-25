@@ -1,7 +1,10 @@
 import os
 from pyrogram import Client ,filters
 from helper.database import getid
-ADMIN = int(os.environ.get("ADMIN", 923943045))
+
+id_pattern = re.compile(r'^.\d+$')
+
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMIN', '').split()]
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
@@ -15,3 +18,11 @@ async def broadcast(bot, message):
      	await message.reply_to_message.copy(id)
      except:
      	pass
+
+
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["users"]))
+async def get_users(client: Client, message: Message):
+    msg = await client.send_message(chat_id=message.chat.id, text="weit....")
+    ids = getid()
+    tot = len(ids)
+    await msg.edit(f"Total uses = {tot}")
