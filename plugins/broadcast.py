@@ -1,10 +1,11 @@
+import re
 import os
 from pyrogram import Client ,filters
 from helper.database import getid
 
 id_pattern = re.compile(r'^.\d+$')
 
-ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMIN', '').split()]
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
