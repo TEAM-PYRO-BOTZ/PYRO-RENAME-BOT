@@ -50,10 +50,10 @@ broadcast - admin only
 ## ❣️Thanks to
 
 <a href="https://t.me/lntechnical">
-   <p> Telegram </p>
+   <p> lntechnical TG</p>
   </a>
 <a href="https://youtube.com/c/LNtechnical">
-   <p> YouTube </p>
+   <p> lntechnical YT </p>
   </a>
 
 
