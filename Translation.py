@@ -13,7 +13,6 @@ class mr(object):
 ├👑 𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
 ├😎 𝙳𝙴𝚅𝚂 : @Mhd_rzn & @mr_MKN 
 ├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/lntechnical2>𝙻𝙽 𝚃𝙴𝙲𝙷.𝚐𝚒𝚝</a>
-├🖥️ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 : <a href=https://youtu.be/7ALYUk-rYMc>𝙼𝙾 𝚃𝙴𝙲𝙷 𝚈𝚃</a>
 ├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
 ├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>𝙿𝚈𝚃𝙷𝙾𝙽 3</a>
 ├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
@@ -41,3 +40,12 @@ Example:- /set_caption 📕 File Name: {filename}
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
 ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MKN_BOTZ_DISCUSSION_GROUP>𝑴𝑲𝑵 𝑩𝑶𝑻𝒁 𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
+
+    DEV_TXT = """
+<b><u>Special Thanks & Developers</b></u> 
+
+• ❣️ <a href=https://t.me/Mhd_rzn>Support</a>
+• ❣️ <a href=https://github.com/lntechnical2>Programmer</a>
+• ❣️ <a href=https://t.me/mr_MKN>Support</a>
+• ❣️ <a href=https://t.me/GitHub_noob>Support</a>
+• 
