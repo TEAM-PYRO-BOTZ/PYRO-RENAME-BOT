@@ -44,8 +44,8 @@ Example:- /set_caption 📕 File Name: {filename}
     DEV_TXT = """
 <b><u>Special Thanks & Developers</b></u> 
 
-• ❣️ <a href=https://t.me/Mhd_rzn>Support</a>
 • ❣️ <a href=https://github.com/lntechnical2>Programmer</a>
+• ❣️ <a href=https://t.me/Mhd_rzn>Support</a>
 • ❣️ <a href=https://t.me/mr_MKN>Support</a>
 • ❣️ <a href=https://t.me/GitHub_noob>Support</a>
-• 
+"""
