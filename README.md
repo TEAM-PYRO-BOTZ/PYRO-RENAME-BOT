@@ -15,19 +15,19 @@ Telegram File Renamer Bot
 
 ## Configs 
 
-* TG_BOT_TOKEN  - Get bot token from @BotFather
+* `TG_BOT_TOKEN`  - Get bot token from @BotFather
 
-* API_ID        - From my.telegram.org 
+* `API_ID` - From my.telegram.org 
 
-* API_HASH      - From my.telegram.org 
+* `API_HASH` - From my.telegram.org 
 
-* ADMIN         - AUTH or bot controllers id's multiple id use space to split 
+* `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
 
-* DATABASE_URI  - Mongo Database URL from https://cloud.mongodb.com/
+* `DATABASE_URI`  - Mongo Database URL from https://cloud.mongodb.com/
 
-* DATABASE_NAME  - Your database name from mongoDB. Default will be 'my'
+* `DATABASE_NAME`  - Your database name from mongoDB. Default will be 'my'
 
-* FORCE_SUB - your force sub channel username without @ 
+* `FORCE_SUB` - your force sub channel username without @ 
 
 
 
