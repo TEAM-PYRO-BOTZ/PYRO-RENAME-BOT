@@ -1,4 +1,4 @@
-# RENAMER_BOT
+#  𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑩𝑶𝑻 𝑽𝑸
 
 Telegram File Renamer Bot 
 
@@ -21,34 +21,34 @@ Telegram File Renamer Bot
 
 * API_HASH      - From my.telegram.org 
 
-* ADMIN         - Your User ID 
+* ADMIN         - AUTH or bot controllers id's multiple id use space to split 
 
 * DATABASE_URI  - Mongo Database URL from https://cloud.mongodb.com/
 
 * DATABASE_NAME  - Your database name from mongoDB. Default will be 'my'
 
-## Bot Commands
-> View Thumbnail 
-* `/viewthumb` View Thumbnail 
-> Delete Thumbnail
-* `/delthumb` Delete Thumbnail
-> Broadcast Send Message To All User 
-* `/broadcast` reply to message
+* FORCE_SUB - your force sub channel username without @ 
+
+
 
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/RENAMER_Ultron)
 
-## License
-````
-lntechnical2/RENAMER_BOT is licensed under the
-Apache License 2.0
-A permissive license whose main conditions require preservation of copyright and license notices.
-Contributors provide an express grant of patent rights.
-Licensed works, modifications, 
-and larger works may be distributed under different terms and without source code 
-````
 
-## Support 🇮🇳
+## Botfather Commands
+```
+start - bot alive cheking
+viewthumb - View Thumbnail
+delthumb - Delete Thumbnail
+set_caption - set a custom caption
+see_caption - see your custom caption
+del_caption - delete custom caption
+users - admin only
+broadcast - admin only
+```
+
+## ❣️Thanks to
+
 <a href="https://t.me/lntechnical">
    <p> Telegram </p>
   </a>
@@ -56,16 +56,4 @@ and larger works may be distributed under different terms and without source cod
    <p> YouTube </p>
   </a>
 
-## Credits
 
-<p align="left">
-  <a href="https://github.com/pyrogram/pyrogram">
-    <img alt="Pyrogram" src ="https://i.imgur.com/BOgY9ai.png" width="104.75" height="32"/>
-  </a>
-</p>
-
-<p align="left">
-  <a href="https://docs.mongodb.com">
-    <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>
-  </a>
-</p>
