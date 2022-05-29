@@ -2,7 +2,6 @@
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
     "logo": "https://telegra.ph/file/1c7f268a8ac9fe2667b61.jpg",
-    "stack": "container",
     "keywords": [
         "Renamer Bot",
         "Mongo DB"
