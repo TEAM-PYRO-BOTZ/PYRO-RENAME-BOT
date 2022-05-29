@@ -36,7 +36,7 @@ Telegram File Renamer Bot
 * `/broadcast` reply to message
 
 ### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/RENAMER_BOT-6)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/RENAMER_Ultron)
 
 ## License
 ````
