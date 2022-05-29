@@ -19,18 +19,16 @@ async def start(client, message):
     insert(int(message.chat.id))
     await message.reply_photo(
        photo="https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
-       caption=f"""👋 Hai {message.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚄𝚂𝚃𝙾𝙼 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝚂𝚞𝚙𝚙𝚘𝚛𝚝!🤩 \n𝙱𝙾𝚃 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙱𝚢: @mr_MKN & @Mr_MKN_TG \n 🤩""",
+       text=f"""👋 Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
        reply_markup=InlineKeyboardMarkup( [[
-          InlineKeyboardButton("👨‍💻 𝙾𝚆𝙽𝙴𝚁 👨‍💻", url='https://t.me/mr_MKN')
-          ],[
-          InlineKeyboardButton("👼 Developers 👼", callback_data='dev')
-          ],[
-          InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/mkn_bots_updates'),
-          InlineKeyboardButton('ℹ️ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/MKN_BOTZ_DISCUSSION_GROUP')
-          ],[
-          InlineKeyboardButton('🛡️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
-          InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
-          ]]
+           InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂 👼", callback_data='dev')
+           ],[
+           InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/PYRO_BOTZ'),
+           InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/PYRO_BOTS_CHAT')
+           ],[
+           InlineKeyboardButton('🍃 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
+           InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
+           ]]
           )
        )
     return
@@ -44,8 +42,8 @@ async def send_doc(client, message):
     await message.reply_text(
         f"__What do you want me to do with this file?__\n**File Name** :- `{filename}`\n**File Size** :- `{filesize}`",
         reply_to_message_id = message.id,
-        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 𝚁𝙴𝙽𝙰𝙼𝙴",callback_data = "rename"),
-        InlineKeyboardButton("𝙲𝙰𝙽𝙲𝙴𝙻 ✖️",callback_data = "cancel")  ]]))
+        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 𝚁𝙴𝙽𝙰𝙼𝙴",callback_data = "rename")],
+        [InlineKeyboardButton("𝙲𝙰𝙽𝙲𝙴𝙻 ✖️",callback_data = "cancel")  ]]))
 
 
 @Client.on_callback_query()
@@ -53,16 +51,14 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚄𝚂𝚃𝙾𝙼 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! \n𝙱𝙾𝚃 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙱𝚢: @mr_MKN & @Mr_MKN_TG \n 🤩""",
+            text=f"""👋 Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("👨‍💻 𝙾𝚆𝙽𝙴𝚁 👨‍💻", url='https://t.me/mr_MKN')
+                InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂 👼", callback_data='dev')
                 ],[
-                InlineKeyboardButton("👼 Developers 👼", callback_data='dev')
+                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/PYRO_BOTZ'),
+                InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/PYRO_BOTS_CHAT')
                 ],[
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/mkn_bots_updates'),
-                InlineKeyboardButton('ℹ️ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/MKN_BOTZ_DISCUSSION_GROUP')
-                ],[
-                InlineKeyboardButton('🛡️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
+                InlineKeyboardButton('🍃 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
                 InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
                 ]]
                 )
