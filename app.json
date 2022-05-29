@@ -1,6 +1,7 @@
 {
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
+    "logo": "https://telegra.ph/file/1c7f268a8ac9fe2667b61.jpg",
     "stack": "container",
     "keywords": [
         "Renamer Bot",
@@ -9,24 +10,25 @@
     "repository": "https://github.com/lntechnical2/RENAMER_BOT",
     "success_url": "https://telegram.dog/lntechnical",
     "env": {
-        "APP_ID": {
+        "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
-            "value": "12075871"
+            "value": ""
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": "e3c805f87c13a7a800dc1ceee2fbab8a"
+            "value": ""
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
-            "value": "mkn_bots_updates"
+            "value": "mkn_bots_updates",
+            "required": false 
         },
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
-            "value": "5232398510:AAEyU5n0iT7nIGrv3mUryvBcRC2xDeZd96Y"
+            "value": ""
         },
         "ADMIN": {
-            "description":"Add Your User ID"
+            "description":"Add Your User ID multiple is use space to split"
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
@@ -34,7 +36,7 @@
         },
         "DB_NAME":{ 
                "description":"Your Mongo DB Database Name ",
-                "value": "Rebot",
+                "value": "pyro-botz",
                 "required": false
         }
     },
