@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 import humanize
-from Translation import mr
+from helper.txt import mr
 from helper.database import  insert 
 from helper.utils import not_subscribed 
 
