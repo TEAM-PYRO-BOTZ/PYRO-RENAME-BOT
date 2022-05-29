@@ -83,6 +83,15 @@ async def cb_handler(client, query: CallbackQuery):
                ]]
             )
         )
+    elif data == "dev":
+        await query.message.edit_text(
+            text=mr.DEV_TXT,
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
+               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
+               ]]
+            )
+        )
     elif data == "close":
         await query.message.delete()
         try:
