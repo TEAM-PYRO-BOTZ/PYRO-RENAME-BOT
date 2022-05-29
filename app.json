@@ -32,7 +32,7 @@
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
-            "value": "mongodb+srv://FL:FL@cluster0.vnyds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+            "value": ""
         },
         "DB_NAME":{ 
                "description":"Your Mongo DB Database Name ",
