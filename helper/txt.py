@@ -1,11 +1,11 @@
 class mr(object):
     PROGRESS_BAR = """\n
-╭───[**🔅Progress Bar🔅**]───⍟
-├<b>📁 : {1} | {2}</b>
-├<b>🚀 : {0}%</b>
-├<b>⚡ : {3}/s</b>
-├<b>⏱️ : {4}</b>
-╰─────────────────⍟"""
+╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+┣⪼ 🗂️ : {1} | {2}
+┣⪼ ⏳️ : {0}%
+┣⪼ 🚀 : {3}/s
+┣⪼ ⏱️ : {4}
+╰━━━━━━━━━━━━━━━➣ """
 
     ABOUT_TXT = """
 ╭───────────⍟
@@ -38,14 +38,14 @@ Example:- /set_caption 📕 File Name: {filename}
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MKN_BOTZ_DISCUSSION_GROUP>𝑴𝑲𝑵 𝑩𝑶𝑻𝒁 𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
+ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/PYRO_BOTS_CHAT>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
 
     DEV_TXT = """
 <b><u>Special Thanks & Developers</b></u> 
 
-• ❣️ <a href=https://github.com/lntechnical2>Programmer</a>
-• ❣️ <a href=https://t.me/Mhd_rzn>Support</a>
-• ❣️ <a href=https://t.me/mr_MKN>Support</a>
-• ❣️ <a href=https://t.me/GitHub_noob>Support</a>
+• ❣️ <a href=https://github.com/lntechnical2>𝘓𝘕 𝘛𝘌𝘊𝘏𝘕𝘐𝘊</a>
+• ❣️ <a href=https://t.me/Mhd_rzn>𝐌𝐡𝐝_𝐫𝐳𝐧</a>
+• ❣️ <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
+• ❣️ <a href=https://t.me/GitHub_noob>𝙂𝙞𝙩𝙃𝙪𝙗 𝙉𝙊𝙊𝘽</a>
 """
