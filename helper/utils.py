@@ -1,6 +1,6 @@
 import math
 import time 
-from Translation import mr
+from helper.txt import mr
 from pyrogram.errors import UserNotParticipant
 
 async def progress_for_pyrogram(
