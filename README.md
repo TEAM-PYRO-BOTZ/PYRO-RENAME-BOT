@@ -30,11 +30,6 @@ Telegram File Renamer Bot
 * `FORCE_SUB` - your force sub channel username without @ 
 
 
-
-### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/RENAMER_Ultron)
-
-
 ## Botfather Commands
 ```
 start - bot alive cheking
