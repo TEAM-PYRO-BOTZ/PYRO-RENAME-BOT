@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/TEAM-PYRO-BOTZ/RENAMER_Ultron.git /RENAMER_Ultron                              #1
+  git clone https://github.com/TEAM-PYRO-BOTZ/Pyro_Renamer-VQ.git /RENAMER_Ultron                              #1
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /RENAMER_Ultron
