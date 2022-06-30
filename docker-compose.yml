@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  pyro:
+    build: .
+    environment:
+      API_HASH: $API_HASH
+      API_HASH: $API_HASH
+      BOT_TOKEN: $BOT_TOKEN
+      FORCE_SUB: $FORCE_SUB
+      ADMIN: $ADMIN
+      DB_URL: $DATABASE_URI
+      DB_NAME: $DATABASE_NAME
+      
