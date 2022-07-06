@@ -42,11 +42,11 @@ Example:- /set_caption 📕 File Name: {filename}
 
     DEV_TXT = """
 <b><u>Special Thanks & Developers</b></u> 
-⚠️ don't remove our credits 🙏
-» SOURCE CODE <a href=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAMER-VQ>𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸</a>
+#⚠️ don't remove our credits 🙏
+» 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAMER-VQ>𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸</a>
 
-• ❣️ <a href=https://github.com/lntechnical2>𝘓𝘕 𝘛𝘌𝘊𝘏𝘕𝘐𝘊</a>
-• ❣️ <a href=https://t.me/Mhd_rzn>𝐌𝐡𝐝_𝐫𝐳𝐧</a>
-• ❣️ <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
-• ❣️ <a href=https://t.me/GitHub_noob>𝙂𝙞𝙩𝙃𝙪𝙗 𝙉𝙊𝙊𝘽</a>
+• ❣️ <a href=https://github.com/lntechnical2>𝗟𝗡 𝗧𝗘𝗖𝗛𝗡𝗜𝗖</a>
+• ❣️ <a href=https://t.me/Mhd_rzn>𝗠𝗵𝗱_𝗿𝘇𝗻</a>
+• ❣️ <a href=https://t.me/mr_MKN>𝗠𝗿.𝗠𝗞𝗡 𝗧𝗚</a>
+• ❣️ <a href=https://t.me/GitHub_noob>𝗚𝗶𝘁𝗛𝘂𝗯 𝗡𝗢𝗢𝗕</a>
 """
