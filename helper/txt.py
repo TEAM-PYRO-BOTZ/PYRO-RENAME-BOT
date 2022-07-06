@@ -40,9 +40,10 @@ Example:- /set_caption 📕 File Name: {filename}
 ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/PYRO_BOTZ_CHAT>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
 
+#⚠️ don't remove our credits 🙏😢😢
     DEV_TXT = """
 <b><u>Special Thanks & Developers</b></u> 
-#⚠️ don't remove our credits 🙏
+
 » 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAMER-VQ>𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸</a>
 
 • ❣️ <a href=https://github.com/lntechnical2>𝗟𝗡 𝗧𝗘𝗖𝗛𝗡𝗜𝗖</a>
