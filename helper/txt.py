@@ -42,6 +42,8 @@ Example:- /set_caption 📕 File Name: {filename}
 
     DEV_TXT = """
 <b><u>Special Thanks & Developers</b></u> 
+⚠️ don't remove our credits 🙏
+» SOURCE CODE <a href=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAMER-VQ>𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸</a>
 
 • ❣️ <a href=https://github.com/lntechnical2>𝘓𝘕 𝘛𝘌𝘊𝘏𝘕𝘐𝘊</a>
 • ❣️ <a href=https://t.me/Mhd_rzn>𝐌𝐡𝐝_𝐫𝐳𝐧</a>
