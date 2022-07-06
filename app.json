@@ -6,8 +6,7 @@
         "Renamer Bot",
         "Mongo DB"
     ],
-    "repository": "https://github.com/lntechnical2/RENAMER_BOT",
-    "success_url": "https://telegram.dog/lntechnical",
+    "repository": "https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAMER-VQ",
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
