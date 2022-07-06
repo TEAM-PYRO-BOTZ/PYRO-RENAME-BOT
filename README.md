@@ -1,4 +1,4 @@
-#  𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸
+#  𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
 
 Telegram File Renamer Bot 
 
@@ -12,7 +12,7 @@ Telegram File Renamer Bot
 
 ### DEPLOYEMENT SUPPORT
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/PYRO-RENAME-LODER)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT)
 
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/84xHyt)
