@@ -2,6 +2,8 @@ import math
 import time 
 from helper.txt import mr
 from pyrogram.errors import UserNotParticipant
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 
 async def progress_for_pyrogram(
     current,
