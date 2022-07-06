@@ -1,4 +1,4 @@
-#  𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑩𝑶𝑻 𝑽𝑸
+#  𝑷𝒀𝑹𝑶 𝑹𝑬𝑵𝑨𝑴𝑬 𝑽𝑸
 
 Telegram File Renamer Bot 
 
@@ -58,5 +58,13 @@ broadcast - admin only
 <a href="https://youtube.com/c/LNtechnical">
    <p> lntechnical YT </p>
   </a>
+
+## 🤩 INSPIRATION
+
+<a href="https://youtube.com/c/MoTech_YT">
+   <p>❣️ MoTech 🔥</p>
+  </a>
+
+
 
 
