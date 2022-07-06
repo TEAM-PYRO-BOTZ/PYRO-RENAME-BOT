@@ -42,6 +42,10 @@ async def progress_for_pyrogram(
                     ud_type,
                     tmp
                 )
+                reply_markup=InlineKeyboardMarkup( [[
+                    InlineKeyboardButton("𝙲𝙰𝙽𝙲𝙴𝙻 ✖️",callback_data = "cancel")
+                    ]]
+                )
             )
         except:
             pass
