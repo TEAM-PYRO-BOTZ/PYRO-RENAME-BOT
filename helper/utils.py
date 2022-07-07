@@ -3,15 +3,9 @@ import time
 from helper.txt import mr
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import enums
 
-
-async def progress_for_pyrogram(
-    current,
-    total,
-    ud_type,
-    message,
-    start
-):
+async def progress_for_pyrogram(current, total, ud_type, message, start):
 
     now = time.time()
     diff = now - start
@@ -40,18 +34,14 @@ async def progress_for_pyrogram(
         )
         try:
             await message.edit(
-                text="{}\n\n{}".format(
-                    ud_type,
-                    tmp
-                ),
+                text="{}\n\n{}".format(ud_type, tmp),               
                 reply_markup=InlineKeyboardMarkup( [[
-                    InlineKeyboardButton("𝙲𝙰𝙽𝙲𝙴𝙻 ✖️",callback_data = "cancel")
+                    InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel")
                     ]]
                 )
             )
         except:
             pass
-
 
 def humanbytes(size):
     # https://stackoverflow.com/a/49361727/4723940
@@ -65,7 +55,6 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
 
 def TimeFormatter(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
@@ -95,7 +84,7 @@ async def not_subscribed(_, client, message):
    except UserNotParticipant:
       pass
    else:
-      if user.status != "kicked":         
+      if user.status != enums.ChatMemberStatus.RESTRICTED:         
          return False 
    return True
          
