@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 import humanize
 from helper.txt import mr
-from helper.database import  insert 
+from helper.database import insert 
 from helper.utils import not_subscribed 
 
 START_PIC = environ.get("START_PIC", "https://telegra.ph/file/04d08445dce68c9a57b25.jpg")
