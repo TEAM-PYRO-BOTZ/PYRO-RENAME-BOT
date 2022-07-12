@@ -1,7 +1,7 @@
 import pymongo 
 import os
 
-DB_NAME = os.environ.get("DB_NAME","")
+DB_NAME = os.environ.get("DB_NAME","pyro-botz")
 DB_URL = os.environ.get("DB_URL","")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
