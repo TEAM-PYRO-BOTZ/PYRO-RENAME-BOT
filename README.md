@@ -34,9 +34,32 @@ Telegram File Renamer Bot
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/OX7-wG)
 
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
 
-[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com)    
- 
+
+
+
+
+[![Develop on Okteto]()](https://cloud.okteto.com)    
+
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://cloud.okteto.com">
+  <img src="https://okteto.com/develop-okteto.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
+
+
 
 ## Configs 
 
