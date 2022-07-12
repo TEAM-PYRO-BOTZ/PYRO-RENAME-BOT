@@ -2,7 +2,7 @@ import pymongo
 import os
 
 DB_NAME = os.environ.get("DB_NAME","pyro-botz")
-DB_URL = os.environ.get("DB_URL","")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://PY:PY@renamer.plx6v91.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]
