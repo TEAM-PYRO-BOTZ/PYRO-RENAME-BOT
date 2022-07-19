@@ -14,32 +14,23 @@
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": ""
-        },
-        "FORCE_SUB": {
-            "description": "Your force sub channel user name without [@] ",
-            "value": "",
-            "required": false 
+            "value": ""        
         },
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": ""
         },
-        "ADMIN": {
-            "description":"Add Your User ID multiple is use space to split"
+        "USERS": {
+            "description":"Add Your User ID multiple is use space to split" 
+         
         },
-        "DB_URL": {
-            "description": "Your Mongo DB URL Obtained From mongodb.com",
-            "value": ""
-        },
-        "DB_NAME":{ 
-            "description":"Your Mongo DB Database Name ",
-            "value": "pyro-botz",
+        "CAPTION": {
+            "description": "you're custom caption format=[ file name ={filename}, original file size ={filesize}, runtime ={duration}]",                  
             "required": false
         },
-        "START_PIC": {
-            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
-            "value": "https://telegra.ph/file/04d08445dce68c9a57b25.jpg"
+        "THUMBNAIL": {
+            "description": "your Thumbnile photo telegram id. Tutorial is soon...",
+            "required": false
         }
     },
     "stack": "heroku-22",
