@@ -1,7 +1,12 @@
+import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
 
-@Client.on_message(filters.private & filters.reply)
+id_pattern = re.compile(r'^.\d+$')
+
+USERS = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('USERS', '').split()]
+
+@Client.on_message(filters.private & filters.reply & filters.user(USERS))
 async def refunc(client, message):
     reply_message = message.reply_to_message
     if (reply_message.reply_markup) and isinstance(reply_message.reply_markup, ForceReply):
