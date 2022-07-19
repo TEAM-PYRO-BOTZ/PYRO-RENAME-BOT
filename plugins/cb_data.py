@@ -3,11 +3,15 @@ from pyrogram import Client, filters
 from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-from helper.database import find
 import os 
 import humanize
 from PIL import Image
 import time
+from os import environ
+
+CAPTION = (environ["CAPTION"])
+
+THUMBNAIL = (environ["THUMBNAIL"])
 
 @Client.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
@@ -57,8 +61,8 @@ async def doc(bot,update):
      ph_path = None
      data = find(user_id) 
      media = getattr(file, file.media.value)
-     c_caption = data[1] 
-     c_thumb = data[0]
+     c_caption = CAPTION
+     c_thumb = THUMBNAIL
      if c_caption:
          caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
      else:
