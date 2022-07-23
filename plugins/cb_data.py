@@ -58,8 +58,7 @@ async def doc(bot,update):
      except:
         pass
      user_id = int(update.message.chat.id) 
-     ph_path = None
-     data = find(user_id) 
+     ph_path = None     
      media = getattr(file, file.media.value)
      c_caption = CAPTION
      c_thumb = THUMBNAIL
