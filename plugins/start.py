@@ -2,7 +2,7 @@ from os import environ
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 import humanize
-from filedetect import USERS
+from plugins.filedetect import USERS
 from helper.txt import mr
 
 @Client.on_message(filters.private & filters.command(["start"]) & filters.user(USERS))
