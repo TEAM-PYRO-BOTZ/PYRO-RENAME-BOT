@@ -26,7 +26,7 @@ Telegram File Renamer Bot
 
 * `API_HASH` - From my.telegram.org
 
-* `THUMBNAIL` - Deploy your bot without this value and send your thumbnail in your bot to copy and paste in heroku config vars
+* `THUMBNAIL` - Deploy your bot without this value and send your thumbnail in your bot to copy the id and paste in heroku config vars
 
 * `CAPTION` - your caption
 
