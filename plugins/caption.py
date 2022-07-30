@@ -11,9 +11,9 @@ async def add_caption(client, message):
 
 @Client.on_message(filters.private & filters.command('del_caption'))
 async def delete_caption(client, message): 
-    #caption = fint(int(message.chat.id))[1]
-    #if not caption:
-       #return await message.reply_text("**You dont have any custom caption**")
+    caption = find(int(message.chat.id))[1]
+    if not caption:
+       return await message.reply_text("**You dont have any custom caption**")
     delcaption(int(message.chat.id))
     await message.reply_text("**Your caption successfully deleted ✅**")
                                        
