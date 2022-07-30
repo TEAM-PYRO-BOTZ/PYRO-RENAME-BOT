@@ -22,8 +22,10 @@ License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICEN
 """
 
 from os import environ
+from asyncio import sleep
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
+from pyrogram.errors import FloodWait
 import humanize
 from helper.txt import mr
 from helper.database import insert 
@@ -56,18 +58,27 @@ async def start(client, message):
        )
     return
 
-@Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
-async def send_doc(client, message):
-    file = getattr(message, message.media.value)
-    filename = file.file_name
-    filesize = humanize.naturalsize(file.file_size)
-    fileid = file.file_id
-    await message.reply_text(
-        f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`""",
-        reply_to_message_id = message.id,
-        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 𝚁𝙴𝙽𝙰𝙼𝙴 𝙽𝙾𝚆 📝",callback_data = "rename")],
-        [InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️",callback_data = "cancel")  ]]))
 
+@Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
+async def rename_start(client, message):
+    file = getattr(message, message.media.value)
+    file = file.file_name
+    filesize = humanize.naturalsize(file.file_size) 
+    fileid = file.file_id
+    try:
+        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
+        await sleep(0.5)
+    except FloodWait as e:
+        await sleep(e.x)
+        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
+    except:
+        pass
 
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
