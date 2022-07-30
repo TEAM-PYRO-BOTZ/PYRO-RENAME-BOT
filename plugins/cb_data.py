@@ -15,6 +15,7 @@ async def cancel(bot,update):
            await update.message.delete()
 	except:
            return
+
 @Client.on_callback_query(filters.regex('rename'))
 async def rename(bot,update):
 	user_id = update.message.chat.id
@@ -26,11 +27,11 @@ async def rename(bot,update):
 	
 @Client.on_callback_query(filters.regex("upload"))
 async def doc(bot,update):
-     type = update.data.split('_')[1]
+     type = update.data.split("_")[1]
      new_name = update.message.text
      new_filename = new_name.split(":-")[1]
      if not "." in new_filename:
-         new_filename = new_filename + ".mkv"
+         new_filename = new_filename + ".mkv"     
      else:
          new_filename = new_filename + ".mkv"
      file_path = f"downloads/{new_filename}"
@@ -62,7 +63,7 @@ async def doc(bot,update):
      if c_caption:
          caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
      else:
-         caption = f"**{new_name}**"
+         caption = f"**{new_filename}**"
      if (media.thumbs or c_thumb):
          if c_thumb:
             ph_path = await bot.download_media(c_thumb) 
