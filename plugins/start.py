@@ -31,6 +31,7 @@ from helper.txt import mr
 from helper.database import insert 
 from helper.utils import not_subscribed 
 
+FLOOD = int(environ.get("FLOOD", "30"))
 START_PIC = environ.get("START_PIC", "https://telegra.ph/file/04d08445dce68c9a57b25.jpg")
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
@@ -70,7 +71,7 @@ async def rename_start(client, message):
         buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
                    [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
-        await sleep(0.5)
+        await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.x)
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
