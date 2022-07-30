@@ -31,7 +31,7 @@ from helper.txt import mr
 from helper.database import insert 
 from helper.utils import not_subscribed 
 
-FLOOD = int(environ.get("FLOOD", "30"))
+FLOOD = int(environ.get("FLOOD", "10"))
 START_PIC = environ.get("START_PIC", "https://telegra.ph/file/04d08445dce68c9a57b25.jpg")
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
