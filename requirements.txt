@@ -3,7 +3,7 @@ motor
 Pillow
 humanize
 hachoir
-pyrogram==2.0.26
+pyrogram
 TgCrypto
 pymongo
 dnspython
