@@ -42,7 +42,6 @@
             "value": "https://telegra.ph/file/04d08445dce68c9a57b25.jpg"
         }
     },
-    "stack": "heroku-22",
     "buildpacks": [
         {
             "url": "heroku/python"
