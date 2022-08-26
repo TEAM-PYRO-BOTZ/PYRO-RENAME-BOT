@@ -61,7 +61,7 @@ Telegram File Renamer Bot
 
 * `FORCE_SUB` - your force sub channel username without @ 
 
-& `START_PIC` - start message photo
+* `START_PIC` - start message photo
 
 ## Botfather Commands
 ```
