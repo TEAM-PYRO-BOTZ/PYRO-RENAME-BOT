@@ -30,8 +30,9 @@ from helper.database import getid, ideed
 id_pattern = re.compile(r'^.\d+$')
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]               
-PRO_USERS = int(900873119 5756883599 5172114510).split()
+PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "900873119 5756883599 5172114510").split()))
 PRO_USERS.append(ADMIN)
+
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
