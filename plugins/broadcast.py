@@ -25,7 +25,7 @@ import re
 import os
 from pyrogram.types import Message
 from pyrogram import Client ,filters
-from helper.database import getid, ideed
+from helper.database import getid
 
 id_pattern = re.compile(r'^.\d+$')
 
