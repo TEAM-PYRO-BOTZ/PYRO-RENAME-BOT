@@ -84,9 +84,8 @@ async def not_subscribed(_, client, message):
    except UserNotParticipant:
       pass
    else:
-      if user.status != enums.ChatMemberStatus.BANNED:
-        await message.reply(text="""𝚂𝙾𝚁𝚁𝚈, 𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴""", disable_web_page_preview=True)               
-        return False 
+      if user.status != enums.ChatMemberStatus.BANNED:                       
+         return False 
    return True
          
 
