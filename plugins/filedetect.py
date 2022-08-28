@@ -10,6 +10,12 @@ async def refunc(client, message):
        msg = await client.get_messages(message.chat.id, reply_message.id)
        file = msg.reply_to_message
        media = file.media
+       if not "." in new_name:
+          if "." in media.file_name:
+              extn = media.file_name.rsplit('.', 1)[-1]
+          else:
+              extn = ".mkv"
+          new_name = new_name + extn
        await reply_message.delete()
        button = [[InlineKeyboardButton("📁 𝙳𝙾𝙲𝚄𝙼𝙴𝙽𝚃𝚂",callback_data = "upload_document")]]
        if str(media) in ["MessageMediaType.VIDEO", "MessageMediaType.DOCUMENT"]:
