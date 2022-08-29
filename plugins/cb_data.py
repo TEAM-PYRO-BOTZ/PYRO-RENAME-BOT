@@ -30,10 +30,6 @@ async def doc(bot,update):
      type = update.data.split("_")[1]
      new_name = update.message.text
      new_filename = new_name.split(":-")[1]
-     if not "." in new_filename:
-         new_filename = new_filename + ".mkv"     
-     else:
-         new_filename = new_filename + ".mkv"
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
      ms = await update.message.edit("𝚃𝚁𝚈𝙸𝙽𝙶 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳...")
