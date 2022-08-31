@@ -13,12 +13,12 @@ async def viewthumb(client, message):
 		
 @Client.on_message(filters.private & filters.command(['delthumb']))
 async def removethumb(client, message):
-    await db.set_thumbnail(message.from_user.id, thumbnail=None)
+    await db.set_thumbnail(message.from_user.id, file_id=None)
     await message.reply_text("❌️ __**𝚈𝙾𝚄𝚁 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳**__")
 	
 @Client.on_message(filters.private & filters.photo)
 async def addthumbs(client, message):
     mkn = await message.reply_text("Please Wait ...")
-    await db.set_thumbnail(message.from_user.id, thumbnail=message.photo.file_id)                
+    await db.set_thumbnail(message.from_user.id, file_id=message.photo.file_id)                
     await mkn.edit("✅️ __**𝚈𝙾𝚄𝚁 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝚂𝙰𝚅𝙴𝙳**__")
 	
