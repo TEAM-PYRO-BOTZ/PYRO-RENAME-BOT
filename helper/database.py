@@ -13,7 +13,7 @@ class Database:
 
     def new_user(self, id):
         return dict(
-            _id=id,                                   
+            _id=int(id),                                   
             file_id=None,
             caption=None
         )
@@ -24,7 +24,7 @@ class Database:
 
     async def is_user_exist(self, id):
         user = await self.col.find_one({'_id': int(id)})
-        return True if user else False
+        return bool(user)
 
     async def total_users_count(self):
         count = await self.col.count_documents({})
@@ -38,14 +38,14 @@ class Database:
         await self.col.delete_many({'_id': int(user_id)})
     
     async def set_thumbnail(self, id, file_id):
-        await self.col.update_one({'_id': id}, {'$set': {'file_id': file_id}})
+        await self.col.update_one({'_id': int(id)}, {'$set': {'file_id': file_id}})
 
     async def get_thumbnail(self, id):
         user = await self.col.find_one({'_id': int(id)})
         return user.get('file_id', None)
 
     async def set_caption(self, id, caption):
-        await self.col.update_one({'_id': id}, {'$set': {'caption': caption}})
+        await self.col.update_one({'_id': int(id)}, {'$set': {'caption': caption}})
 
     async def get_caption(self, id):
         user = await self.col.find_one({'_id': int(id)})
