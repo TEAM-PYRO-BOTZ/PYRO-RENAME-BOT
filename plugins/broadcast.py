@@ -93,7 +93,7 @@ async def broadcast_handler(bot: Client,  m: Message):
     async with aiofiles.open('broadcast.txt', 'w') as broadcast_log_file:
         async for user in all_users:
             sts, msg = await send_msg(
-                user_id=int(user['id']),
+                user_id=int(user['_id']),
                 message=broadcast_msg
             )
             if msg is not None:
@@ -103,7 +103,7 @@ async def broadcast_handler(bot: Client,  m: Message):
             else:
                 failed += 1
             if sts == 400:
-                await db.delete_user(user['id'])
+                await db.delete_user(user['_id'])
             done += 1
             if broadcast_ids.get(broadcast_id) is None:
                 break
