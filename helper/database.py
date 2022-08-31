@@ -1,8 +1,5 @@
-import os
 import motor.motor_asyncio
-
-DB_NAME = os.environ.get("DB_NAME","")                                                        
-DB_URL = os.environ.get("DB_URL","")
+from config import DB_URL, DB_NAME
 
 class Database:
 
