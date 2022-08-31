@@ -1,19 +1,11 @@
-import os 
 import logging 
 import logging.config
 from pyrogram import Client 
+from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB
 
 logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR) 
-
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-
-API_ID = int(os.environ.get("API_ID", ""))
-
-API_HASH = os.environ.get("API_HASH", "")
-
-FORCE_SUB = os.environ.get("FORCE_SUB", None)           
 
 class Bot(Client):
 
