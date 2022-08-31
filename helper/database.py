@@ -14,9 +14,9 @@ class Database:
 
     def new_user(self, id):
         return dict(
-            id=id,
+            _id=id,
             join_date=datetime.date.today().isoformat(),                        
-            thumbnail=None,
+            file_id=None,
             caption=None
         )
 
@@ -25,7 +25,7 @@ class Database:
         await self.col.insert_one(user)
 
     async def is_user_exist(self, id):
-        user = await self.col.find_one({'id': int(id)})
+        user = await self.col.find_one({'_id': int(id)})
         return True if user else False
 
     async def total_users_count(self):
@@ -37,20 +37,20 @@ class Database:
         return all_users
 
     async def delete_user(self, user_id):
-        await self.col.delete_many({'id': int(user_id)})
+        await self.col.delete_many({'_id': int(user_id)})
     
-    async def set_thumbnail(self, id, thumbnail):
-        await self.col.update_one({'id': id}, {'$set': {'thumbnail': thumbnail}})
+    async def set_thumbnail(self, id, file_id):
+        await self.col.update_one({'_id': id}, {'$set': {'file_id': file_id}})
 
     async def get_thumbnail(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('thumbnail', None)
+        user = await self.col.find_one({'_id': int(id)})
+        return user.get('file_id', None)
 
     async def set_caption(self, id, caption):
-        await self.col.update_one({'id': id}, {'$set': {'caption': caption}})
+        await self.col.update_one({'_id': id}, {'$set': {'caption': caption}})
 
     async def get_caption(self, id):
-        user = await self.col.find_one({'id': int(id)})
+        user = await self.col.find_one({'_id': int(id)})
         return user.get('caption', None)
 
 
