@@ -35,8 +35,6 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
  
-broadcast_ids = {}
- 
 @Client.on_message(filters.command("users") & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
     mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
@@ -65,7 +63,7 @@ async def broadcast_handler(bot: Client, m: Message):
         if not done % 20:
            await sts_msg.edit(f"Broadcast in progress:\nnTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
     completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
-    await sts_msg.edit(f"Broadcast Completed:\nCompleted in {completed_in}.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
+    await sts_msg.edit(f"Broadcast Completed:\nCompleted in `{completed_in}`.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
            
 async def send_msg(user_id, message):
     try:
