@@ -68,7 +68,7 @@ async def broadcast_handler(bot: Client, m: Message):
 async def send_msg(user_id, message):
     try:
         await message.copy(chat_id=int(user_id))
-        return 200, None
+        return 200
     except FloodWait as e:
         await asyncio.sleep(e.value)
         return send_msg(user_id, message)
