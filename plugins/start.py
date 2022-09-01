@@ -22,7 +22,6 @@ License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICEN
 """
 
 from asyncio import sleep
-from config import START_PIC, FLOOD
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import FloodWait
@@ -30,6 +29,7 @@ import humanize
 from helper.txt import mr
 from helper.database import db
 from helper.utils import not_subscribed 
+from config import START_PIC, FLOOD, ADMIN 
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def is_not_subscribed(client, message):
@@ -58,6 +58,12 @@ async def start(client, message):
        )
     return
 
+@Client.on_message(filters.command('logs') & filters.user(ADMIN))
+async def log_file(client, message):
+    try:
+        await message.reply_document('TelegramBot.log')
+    except Exception as e:
+        await message.reply_text(f"Error:\n`{e}`")
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
