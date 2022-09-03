@@ -33,15 +33,6 @@ Telegram File Renamer Bot
 </details>
 
 
-<details><summary>Deploy To Oktecto</summary>
-<p>
-<br>
-<a href="https://cloud.okteto.com">
-  <img src="https://okteto.com/develop-okteto.svg" alt="Deploy">
-</a>
-</p>
-</details>
-
 
 
 
