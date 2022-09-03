@@ -7,4 +7,4 @@ cd Github_Repo
 pip3 install -U -r requirements.txt
 
 echo "𝙱𝚘𝚝 𝙸𝚜 𝚂𝚝𝚊𝚛𝚝𝚒𝚗𝚐........"
-python bot.py
+python3 bot.py
