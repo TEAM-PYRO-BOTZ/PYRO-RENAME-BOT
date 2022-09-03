@@ -2,8 +2,7 @@
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
     "logo": "https://telegra.ph/file/e54960f983def61238990.jpg",
-    "keywords": ["Renamer Bot", "Mongo DB"],
-    "stack": "container",
+    "keywords": ["Renamer Bot", "Mongo DB"],    
     "repository": "https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT",
     "env": {
         "API_ID": {
