@@ -2,6 +2,11 @@
 
 #  𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
 
+<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
+
+
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PYRO-RENAME-BOT&theme=dark)
+
 Telegram File Renamer Bot 
 
 <p align="center">
