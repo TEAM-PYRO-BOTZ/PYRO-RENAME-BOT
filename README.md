@@ -8,15 +8,9 @@
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PYRO-RENAME-BOT&theme=dark)
 
-Telegram File Renamer Bot 
 
-<p align="center">
-  <a href="https://www.python.org">
-    <img src="http://ForTheBadge.com/images/badges/made-with-python.svg">
 
-  </a>
-</p>
-</p>
+
 
 ### DEPLOYEMENT SUPPORT
 
