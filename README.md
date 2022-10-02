@@ -9,11 +9,11 @@
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PYRO-RENAME-BOT&theme=dark)
 
 
+# SAME BOT (official pyro rename bot)
 
-
+[![𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓](https://img.shields.io/static/v1?label=𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄&message=𝐁𝐎𝐓&color=critical)](https://t.me/Pyro_Rename_Bot)
 
 ### DEPLOYEMENT SUPPORT
-
 
 <details><summary>Deploy To Heroku</summary>
 <p>
