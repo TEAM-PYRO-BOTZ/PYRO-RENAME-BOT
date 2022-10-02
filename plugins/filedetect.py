@@ -10,8 +10,7 @@ async def refunc(client, message):
        await message.delete() 
        msg = await client.get_messages(message.chat.id, reply_message.id)
        file = msg.reply_to_message
-       media_type = file.media.value
-       media = getattr(file, media_type)
+       media = getattr(file, file.media.value)
        if not "." in new_name:
           if "." in media.file_name:
               extn = media.file_name.rsplit('.', 1)[-1]
@@ -21,9 +20,9 @@ async def refunc(client, message):
        await reply_message.delete()
 
        button = [[InlineKeyboardButton("📁 𝙳𝙾𝙲𝚄𝙼𝙴𝙽𝚃𝚂",callback_data = "upload_document")]]
-       if media_type in [MessageMediaType.VIDEO, MessageMediaType.DOCUMENT]:
+       if file.media in [MessageMediaType.VIDEO, MessageMediaType.DOCUMENT]:
            button.append([InlineKeyboardButton("🎥 𝚅𝙸𝙳𝙴𝙾",callback_data = "upload_video")])
-       elif media_type == MessageMediaType.AUDIO:
+       elif file.media == MessageMediaType.AUDIO:
            button.append([InlineKeyboardButton("🎵 𝙰𝙾𝚄𝙳𝙸𝙾",callback_data = "upload_audio")])
        await message.reply_text(
           f"**Select the output file type**\n**Output FileName** :-```{new_name}```",
