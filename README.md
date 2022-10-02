@@ -11,7 +11,10 @@
 
 # SAME BOT (official pyro rename bot)
 
-[![𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓](https://img.shields.io/static/v1?label=𝐏𝐘𝐑𝐎+𝐑𝐄𝐍𝐀𝐌𝐄&message=𝐁𝐎𝐓&color=critical)](https://t.me/Pyro_Rename_Bot)
+<p align="center">
+[![𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓](https://img.shields.io/static/v1?label=𝐏𝐘𝐑𝐎+𝐑𝐄𝐍𝐀𝐌𝐄&message=𝐁𝐎𝐓&color=green)](https://t.me/Pyro_Rename_Bot)
+</p>
+
 
 ### DEPLOYEMENT SUPPORT
 
