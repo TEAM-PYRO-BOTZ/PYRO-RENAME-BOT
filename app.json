@@ -36,7 +36,8 @@
         },
         "START_PIC": {
             "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
-            "value": "https://graph.org/file/e7aba0e06227ffd054728.jpg"
+            "value": "https://graph.org/file/e7aba0e06227ffd054728.jpg",
+            "required": false
         }
     },
     "buildpacks": [
