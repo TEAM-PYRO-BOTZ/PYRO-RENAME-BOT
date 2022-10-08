@@ -54,7 +54,7 @@ async def start(client, message):
         InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
         ]])
     if START_PIC:
-        await client.send_photo(chat_id=message.chat.id, photo=random.choice(START_PIC), caption=txt, reply_markup=button)       
+        await message.reply_photo(photo=random.choice(START_PIC), caption=txt, reply_markup=button)       
     else:
         await message.reply_text(text=txt, reply_markup=button, disable_web_page_preview = True)
     
