@@ -1,11 +1,11 @@
-import logging 
-import logging.config
+#import logging 
+#import logging.config
 from pyrogram import Client 
 from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB
 
-logging.config.fileConfig("logging.conf")
-logging.getLogger().setLevel(logging.INFO)
-logging.getLogger("pyrogram").setLevel(logging.ERROR) 
+#logging.config.fileConfig("logging.conf")
+#logging.getLogger().setLevel(logging.INFO)
+#logging.getLogger("pyrogram").setLevel(logging.ERROR) 
 
 class Bot(Client):
 
@@ -31,14 +31,18 @@ class Bot(Client):
             link = await self.export_chat_invite_link(FORCE_SUB)
             self.invitelink = link
          except Exception as e:
-            logging.warning(e) 
-            logging.warning("Make Sure Bot admin in force sub channel") 
+            print(f"{e}")
+            print("Make Sure Bot admin in force sub channel")
+            #logging.warning(e) 
+            #logging.warning("Make Sure Bot admin in force sub channel") 
             self.force_channel = None
-       logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
+       print("bot 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
+       #logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
         
     async def stop(self, *args):
       await super().stop()
-      logging.info("Bot Stopped")
+      #logging.info("Bot Stopped")
+      print("Bot Stopped")
         
 bot = Bot()
 bot.run()
