@@ -81,12 +81,3 @@ broadcast - admin only
    <p>❣️ MoTech 🔥</p>
   </a>
 
-## ⚠️ DISCLAIMER ⚠️
-
-
-Note to Guyzz Githubil who is editing someone else's repo ⚠️ Do not change the source code even if you change any link 🙏 Making oru repo is not that simple, there is a lot of trouble and yet you are making it public 🥺 Thank you for showing it 🙏 Please put credits & source cod 🙏🥺
-
-Guyzz Githubil നിന്നും വേറെ ഒരാളുടെ repo edit ചെയ്യുന്നവരുടെ ശ്രദ്ധിക്കുക ⚠️ ഏത് link മാറ്റിയാലും source cod മാറ്റരുത് 🙏 oru repo ഉണ്ടാക്കുന്നത് അത്ര simple അല്ല ഒരുപാട് കഷ്ടപ്പാട് ഉണ്ട് എന്നിട്ടും അത് public ക്കായി നിങ്ങൾക്ക് താരുന്നു 🥺 അതിന്റെ നന്ദി എങ്കിലും കാണിച്ചുകൂടെ 🙏 ദയവു ചെയ്യത് credits & source cod വെക്കുക 🙏🥺
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
