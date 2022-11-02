@@ -4,7 +4,7 @@ from helper.database import db
 @Client.on_message(filters.private & filters.command('set_caption'))
 async def add_caption(client, message):
     if len(message.command) == 1:
-       return await message.reply_text("**__𝙶𝚒𝚟𝚎 𝚖𝚎 𝚊 𝚌𝚊𝚙𝚝𝚒𝚘𝚗 𝚝𝚘 𝚜𝚎𝚝.__\n\n𝙴𝚡𝚊𝚖𝚙𝚕𝚎:- `/set_caption {prefix}{filename}\n\n💾 Size: {filesize}\n\n⏰ Duration: {duration}`**")
+       return await message.reply_text("**__𝙶𝚒𝚟𝚎 𝚖𝚎 𝚊 𝚌𝚊𝚙𝚝𝚒𝚘𝚗 𝚝𝚘 𝚜𝚎𝚝.__\n\n𝙴𝚡𝚊𝚖𝚙𝚕𝚎:- `/set_caption {filename}\n\n💾 Size: {filesize}\n\n⏰ Duration: {duration}`**")
     caption = message.text.split(" ", 1)[1]
     await db.set_caption(message.from_user.id, caption=caption)
     await message.reply_text("__**✅ 𝚈𝙾𝚄𝚁 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝚂𝙰𝚅𝙴𝙳**__")
