@@ -56,7 +56,11 @@ async def doc(bot,update):
      c_caption = await db.get_caption(update.message.chat.id)
      c_thumb = await db.get_thumbnail(update.message.chat.id)
      if c_caption:
-         caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
+         try:
+             caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
+         except Exception as e:
+             await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
+             return 
      else:
          caption = f"**{new_filename}**"
      if (media.thumbs or c_thumb):
@@ -98,10 +102,11 @@ async def doc(bot,update):
 		    progress=progress_for_pyrogram,
 		    progress_args=( "𝚃𝚁𝚈𝙸𝙽𝙶 𝚃𝙾 𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶....",  ms, c_time   )) 
      except Exception as e: 
-         await ms.edit(e) 
+         await ms.edit(f" Erro {e}") 
          os.remove(file_path)
          if ph_path:
            os.remove(ph_path)
+         return 
      await ms.delete() 
      os.remove(file_path) 
      if ph_path:
