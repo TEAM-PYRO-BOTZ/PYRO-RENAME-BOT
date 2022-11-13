@@ -1,6 +1,11 @@
 from pyrogram import Client 
 from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB
 
+from aiohttp import web
+from plugins import web_server
+
+PORT = "8080"
+
 class Bot(Client):
 
     def __init__(self):
@@ -28,6 +33,10 @@ class Bot(Client):
             print(f"{e}")
             print("Make Sure Bot admin in force sub channel")             
             self.force_channel = None
+       app = web.AppRunner(await web_server())
+       await app.setup()
+       bind_address = "0.0.0.0"
+       await web.TCPSite(app, bind_address, PORT).start()
        print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
        
     async def stop(self, *args):
