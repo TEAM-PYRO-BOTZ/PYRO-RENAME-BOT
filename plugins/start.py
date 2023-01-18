@@ -51,14 +51,7 @@ async def start(client, message):
         await message.reply_photo(START_PIC, caption=txt, reply_markup=button)       
     else:
         await message.reply_text(text=txt, reply_markup=button, disable_web_page_preview=True)
-    
-
-@Client.on_message(filters.command('logs') & filters.user(ADMIN))
-async def log_file(client, message):
-    try:
-        await message.reply_document('TelegramBot.log')
-    except Exception as e:
-        await message.reply_text(f"Error:\n`{e}`")
+   
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
