@@ -15,9 +15,9 @@ services:
       - key: API_HASH 
         sync: false
       - key: FORCE_SUB 
-        value: 
+        sync: false
       - key: DB_NAME 
-        value: 
+        sync: false
       - key: DB_URL 
         sync: false 
       - key: START_PIC 
