@@ -22,7 +22,7 @@
 
 ## Deploy To Render
 
-◉ watch tutorial for render deployed https://youtu.be/i6OX3xzOCGY
+◉ watch tutorial for render deploy https://youtu.be/i6OX3xzOCGY
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT)
 
