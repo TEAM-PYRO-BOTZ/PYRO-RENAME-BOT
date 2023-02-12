@@ -4,7 +4,7 @@ services:
     name: PYRO-RENAME-BOT
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: python3 bot.py
     repo: https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT.git      
     branch: main
     envVars:
