@@ -28,7 +28,7 @@
 
 ## Deploy To Railway
 
-<a href="https://railway.app/new/template/OX7-wG"><img src="https://railway.app/button.svg" alt="Deploy"></a>
+<a href="https://graph.org/file/fabd75cd5043d2cfdc13d.jpg"><img src="https://railway.app/button.svg" alt="Deploy"></a>
 
 ## Deploy To Heroku
 
