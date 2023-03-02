@@ -82,8 +82,7 @@ async def not_subscribed(_, client, message):
    try:             
       user = await client.get_chat_member(client.force_channel, message.from_user.id)                        
       if user.status == enums.ChatMemberStatus.BANNED:                       
-          await client.send_message(message.from_user.id, text="𝚈𝙾𝚄𝚁 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴")
-          return True
+          return await client.send_message(message.from_user.id, text="𝚈𝙾𝚄𝚁 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴")          
       else:
           return False 
    except UserNotParticipant:
