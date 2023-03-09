@@ -1,5 +1,5 @@
 from pyrogram import Client 
-from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT
+from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT, WEBHOOK 
 from aiohttp import web
 from route import web_server
 
@@ -30,10 +30,10 @@ class Bot(Client):
                 print(e)
                 print("Make Sure Bot admin in force sub channel")             
                 self.force_channel = None
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0"       
-        await web.TCPSite(app, bind_address, PORT).start()     
+        if WEBHOOK:
+            app = web.AppRunner(await web_server())
+            await app.setup()       
+            await web.TCPSite(app, "0.0.0.0", PORT).start()     
         print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
       
 
