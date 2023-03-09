@@ -12,8 +12,10 @@ services:
         sync: false
       - key: API_ID 
         sync: false
-      - key: API_HASH 
+      - key: API_HASH
         sync: false
+      - key: WEBHOOK
+        synv: false 
       - key: FORCE_SUB 
         sync: false
       - key: DB_NAME 
