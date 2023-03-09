@@ -42,7 +42,9 @@
 
 * `API_ID` - From my.telegram.org 
 
-* `API_HASH` - From my.telegram.org 
+* `API_HASH` - From my.telegram.org
+
+* `WEBHOOK` - if your server is need web service! value = `True` else value = `False`
 
 * `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
 
