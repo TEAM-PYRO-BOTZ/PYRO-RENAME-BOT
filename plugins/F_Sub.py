@@ -27,7 +27,7 @@ from pyrogram.errors import UserNotParticipant
 from config import FORCE_SUB
 
 
-@Client.on_message(filters.private & filters.incoming)
+@Client.on_message(filters.private)
 async def is_not_subscribed(client, message):
     if not client.force_channel:
         pass
