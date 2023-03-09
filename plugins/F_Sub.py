@@ -30,7 +30,8 @@ async def not_subscribed(_, client, message):
     if not client.force_channel:
         return False
     try:             
-        user = await client.get_chat_member(client.force_channel, message.from_user.id)                         
+        user = await client.get_chat_member(client.force_channel, message.from_user.id)  
+        return False                     
     except UserNotParticipant:
         pass
     return True
