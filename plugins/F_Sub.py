@@ -42,7 +42,7 @@ async def not_subscribed(_, client, message):
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def forces_sub(client, message):
-    check = await not_subscribed(_=None, client, message)
+    check = await not_subscribed(_, client, message)
     if check == 500:
         return await client.send_message(message.from_user.id, text="𝚈𝙾𝚄𝚁 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴")                     
     buttons = [[ InlineKeyboardButton(text="📢𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕📢", url=f"https://t.me/{FORCE_SUB}") ]]
