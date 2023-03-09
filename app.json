@@ -13,6 +13,10 @@
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
         },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False"
+        },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
             "value": "",
