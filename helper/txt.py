@@ -45,11 +45,11 @@ class mr(object):
 ╰───────────────⍟
                                 """
     HELP_TXT = """
-🌌 <b><u>HOW TO SET THUMBNILE</u></b>
+🌌 <b><u>HOW TO SET THUMBNAIL</u></b>
   
-•> /start a bot and send any picture to automatically set thumbnile.
-•> /delthumb use this command and delete your old thumbnile.
-•> /viewthumb use this command view your current thumbnile.
+•> /start a bot and send any picture to automatically set thumbnail.
+•> /delthumb use this command and delete your old thumbnail.
+•> /viewthumb use this command view your current thumbnail.
 
 📑 <b><u>HOW TO SET CUSTOM CAPTION</u></b>
 •> /set_caption - set a custom caption

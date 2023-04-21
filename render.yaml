@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     plan: free
     name: PYRO-RENAME-BOT
     env: python
