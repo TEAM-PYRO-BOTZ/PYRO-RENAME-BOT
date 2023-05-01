@@ -18,6 +18,8 @@ services:
         synv: false 
       - key: FORCE_SUB 
         sync: false
+      - key: LOG_CHANNEL 
+        sync: false
       - key: DB_NAME 
         sync: false
       - key: DB_URL 
