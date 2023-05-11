@@ -80,20 +80,16 @@ Exᴀᴍᴩʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 ⏰ Dᴜʀᴀᴛɪᴏɴ: {duration}
 ✏️ <b><u>Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ A Fɪʟᴇ</u></b>
 <b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].           
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/PYRO_BOTZ_CHAT>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
+ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/Anime_Chat_French>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
 
 #⚠️ Dᴏɴ'ᴛ Rᴇᴍᴏᴠᴇ Oᴜʀ Cʀᴇᴅɪᴛꜱ @ᴩyʀᴏ_ʙᴏᴛᴢ🙏🥲
     DEV_TXT = """<b><u>Sᴩᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ & Dᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u>
 » 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT>𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓</a>
 » 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬 : <a href=https://youtu.be/GfulqsSnTv4>MᴏTᴇᴄʜ Yᴛ</a>
-• ❣️ <a href=https://github.com/lntechnical2>𝗟𝗡 𝗧𝗘𝗖𝗛𝗡𝗜𝗖</a>
-• ❣️ <a href=https://t.me/Mhd_rzn>𝗠𝗵𝗱_𝗿𝘇𝗻</a>
-• ❣️ <a href=https://youtu.be/GfulqsSnTv4>𝗠𝗼𝗧𝗲𝗰𝗵 𝗬𝗧</a>
-• ❣️ <a href=https://t.me/mr_MKN>𝗠𝗿.𝗠𝗞𝗡 𝗧𝗚</a>
-• ❣️ <a href=https://t.me/GitHub_noob>𝗚𝗶𝘁𝗛𝘂𝗯 𝗡𝗢𝗢𝗕</a>
-• ❣️ <a href=https://t.me/about_jeol>𝗝𝗲𝗼𝗹 𝗣𝗮𝘂𝗹</a> """
-
+• ❣️ <a href=https://t.me/Shadow_Sanpai>Shadow</a>
+ """
+    
     PROGRESS_BAR = """<b>\n
 ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
 ┣⪼ 🗃️ Sɪᴢᴇ: {1} | {2}
