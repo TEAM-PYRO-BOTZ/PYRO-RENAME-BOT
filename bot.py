@@ -42,9 +42,4 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-    async def stop(self, *args):
-        await super().stop()      
-        print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
-       
-
 Bot().run()
