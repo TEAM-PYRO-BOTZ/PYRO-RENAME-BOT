@@ -6,7 +6,7 @@
 <p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
 
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PATHAN-RENAME-BOT&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PYRO-RENAME-BOT&theme=dark)
 
 
 ### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official Pyro Rename Bot)
