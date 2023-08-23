@@ -36,8 +36,8 @@ async def start(client, message):
     button = InlineKeyboardMarkup([[
         InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
         ],[
-        InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/PYRO_BOTZ'),
-        InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PYRO_BOTZ_CHAT')
+        InlineKeyboardButton('📯 All Anime', url='https://t.me/tokyorevengeandanime'),
+        InlineKeyboardButton('💁‍♂️ Support', url='https://t.me/theaterprintsmovies')
         ],[
         InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('🛠️ Hᴇʟᴩ', callback_data='help')
@@ -56,10 +56,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
-                InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
+                
                 ],[
-                InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/PYRO_BOTZ'),
-                InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PYRO_BOTZ_CHAT')
+                InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/tokyorevengeandanime'),
+                InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/theaterprintsmovies')
                 ],[
                 InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),
                 InlineKeyboardButton('🛠️ Hᴇʟᴩ', callback_data='help')
@@ -71,9 +71,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ YouTube", url="https://youtube.com/@animefanshorts786")
                 ],[
-                InlineKeyboardButton("❤️‍🔥 Hᴏᴡ Tᴏ Uꜱᴇ❤️‍🔥", url='https://youtu.be/4ZfvMSDXBVg')
+                InlineKeyboardButton("❤️‍🔥 Instagram ❤️‍🔥", url='https://instagram.com/pathan_arshlan_k?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D')
                 ],[
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
@@ -85,9 +85,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ YouTube", url="https://youtube.com/@animefanshorts786")
                 ],[
-                InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtu.be/GfulqsSnTv4")
+                InlineKeyboardButton("🖥️ Instagram", url="https://instagram.com/pathan_arshlan_k?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D")
                 ],[
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
@@ -99,9 +99,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ YouTube", url="https://youtube.com/@animefanshorts786")
                 ],[
-                InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtu.be/GfulqsSnTv4")
+                InlineKeyboardButton("🖥️ Instagram", url="https://instagram.com/pathan_arshlan_k?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D")
                 ],[
                 InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
