@@ -10,22 +10,22 @@ services:
     autoDeploy: false
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        sync: 5945429183:AAFjyRATK2mAbh-4ajBKT0bpF3PCZHn1N7Q
       - key: API_ID
-        sync: false
+        sync: 26058820
       - key: API_HASH
-        sync: false
+        sync: cf34db4ed69493d377a2516056711cb6
       - key: FORCE_SUB
-        sync: false
+        sync: -1001826339135
       - key: LOG_CHANNEL
-        sync: false
+        sync: -1001672766292
       - key: DB_NAME
-        sync: false
+        sync: pathan
       - key: DB_URL
-        sync: false
+        sync: mongodb+srv://jk4:jk4@cluster0.smypden.mongodb.net/?retryWrites=true&w=majority
       - key: START_PIC
-        sync: false
+        sync: https://telegra.ph/file/ee4b68fd1f587cf1449b6.jpg
       - key: ADMIN
-        sync: false
+        sync: 5683891175
       - key: WEBHOOK
         sync: false
