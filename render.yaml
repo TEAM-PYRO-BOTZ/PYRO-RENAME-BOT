@@ -7,25 +7,25 @@ services:
     startCommand: python bot.py
     repo: https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT.git
     branch: main
-    autoDeploy: True
+    autoDeploy: false
     envVars:
       - key: BOT_TOKEN
-        sync: 5945429183:AAFjyRATK2mAbh-4ajBKT0bpF3PCZHn1N7Q
+        sync: false
       - key: API_ID
-        sync: 26058820
+        sync: false
       - key: API_HASH
-        sync: cf34db4ed69493d377a2516056711cb6
+        sync: false
       - key: FORCE_SUB
-        sync: -1001826339135
+        sync: false
       - key: LOG_CHANNEL
-        sync: -1001672766292
+        sync: false
       - key: DB_NAME
-        sync: pathan
+        sync: false
       - key: DB_URL
-        sync: mongodb+srv://jk4:jk4@cluster0.smypden.mongodb.net/?retryWrites=true&w=majority
+        sync: false
       - key: START_PIC
-        sync: https://telegra.ph/file/ee4b68fd1f587cf1449b6.jpg
+        sync: false
       - key: ADMIN
-        sync: 5683891175
+        sync: false
       - key: WEBHOOK
         sync: false
