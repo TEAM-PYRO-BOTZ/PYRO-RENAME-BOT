@@ -34,7 +34,7 @@ async def start(client, message):
     user = message.from_user
     await db.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
+      
         ],[
         InlineKeyboardButton('📯 All Anime', url='https://t.me/tokyorevengeandanime'),
         InlineKeyboardButton('💁‍♂️ Support', url='https://t.me/theaterprintsmovies')
