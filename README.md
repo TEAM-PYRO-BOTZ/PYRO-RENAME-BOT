@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-# 𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
+# PATHAN 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
 
 
 <p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
@@ -24,7 +24,7 @@
 
 ◉ Watch Tutorial For Render Deploy <a href="https://graph.org/file/3c0171b4d2d72a2018a18.jpg"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://github.com/Arshlankhan786/PATHAN-RENAME-BOT)
 
 ## Deploy To Railway
 
@@ -32,7 +32,7 @@
 
 ## Deploy To Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/Arshlankhan786/PATHAN-RENAME-BOT"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
 
 
 
@@ -70,21 +70,4 @@ restart - To Rrstart The Bot (Admin Only)
 status - Check Bot Status (Admin Only)
 broadcast - Send Message To All Users (Admin Only)
 ```
-
-## ❣️Thanks To
-
-<a href="https://t.me/lntechnical">
-   <p> lntechnical TG</p>
-  </a>
-<a href="https://youtube.com/c/LNtechnical">
-   <p> lntechnical YT </p>
-  </a>
-
-## 🤩 INSPIRATION
-
-<a href="https://youtube.com/c/MoTech_YT">
-   <p>❣️ MoTech 🔥</p>
-  </a>
-
-
 
