@@ -1,2 +1,2 @@
-web: python bot.py 
-worker: python bot.py
+web: bash start.sh
+worker: bash start.sh

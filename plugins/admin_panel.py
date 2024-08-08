@@ -45,9 +45,18 @@ async def get_stats(bot, message):
 #Restart to cancell all process 
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
-    await m.reply_text("🔄__Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
+    await m.reply_text("🔄 __ʀᴇꜱᴛᴀʀᴛɪɴɢ.....__")
     os.execl(sys.executable, sys.executable, *sys.argv)
 
+#Update Form github 
+@Client.on_message(filters.command("update") & filters.user(Config.ADMIN))
+async def update_bot(c, m):
+    try:
+        os.system("git pull")
+        await m.reply_text("📤 __ᴜᴩᴅᴀᴛᴇᴅ & ʀᴇꜱᴛᴀʀᴛɪɴɢ...__")
+        os.execl(sys.executable, sys.executable, "bot.py")
+    except Exception as e:
+        await m.reply(e)
 
 @Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
