@@ -4,7 +4,7 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
-
+import os
 
 class Bot(Client):
     def __init__(self):
@@ -13,9 +13,10 @@ class Bot(Client):
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
-            workers=200,
+            workers=min(32, os.cpu_count() + 4),
             plugins={"root": "plugins"},
             sleep_threshold=15,
+            max_concurrent_transmissions=Config.MAX_CONCURRENT_TRANSMISSIONS,
         )
 
     async def start(self):
