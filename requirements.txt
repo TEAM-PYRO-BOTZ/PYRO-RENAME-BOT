@@ -1,0 +1,10 @@
+git+https://github.com/MrMKN/pyrogram
+TgCrypto==1.2.5
+pyropatch==2.1    
+motor==3.5.1
+dnspython==2.6.1
+Pillow==9.5.0 
+hachoir==3.2.0
+aiohttp==3.8.4
+pytz==2023.3
+ 
