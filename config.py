@@ -26,20 +26,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "27182158")
+    API_HASH  = os.environ.get("API_HASH", "058dc02f9a17bbab8cfb5b95403403a7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6439928627:AAHONOhLX_81seVJorxyDPGfjmwY86vgsFg") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","hagguMongodb")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Haggu:zqCq7bJXtXfcaUQa
+@haggu.a4jixhr.mongodb.net/?retryWrites=true&w=majority&appName=Haggu")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', "5079331243").split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "haggurr") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "renameloghaggu")
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
