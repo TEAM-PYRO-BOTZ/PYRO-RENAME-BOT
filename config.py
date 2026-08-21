@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "34552415")
+    API_HASH  = os.environ.get("API_HASH", "a41d007169ca0f05f8cb99cd1b3273ec")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8773510192:AAGFB_fmN5yUngB2MxB8X0ZJe7GQhbKv0D8") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","rename_bot_db")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://mano2pqoe_db_user:<db_password>@cluster0.dnjjcoq.mongodb.net/?appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '8546199829').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "@renameupdate") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
